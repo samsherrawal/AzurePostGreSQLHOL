@@ -15,6 +15,10 @@ Postgres is used throughout the computing world, in everything from acting as th
 
 Azure Database for PostgreSQL is a service that provides a fully managed instance of community PostgreSQL in the Azure cloud - at any scale. It’s the same open-source software that is used in on-premises servers, with Azure taking care of maintenance and security obligations.
 
+![AzurePG](1a-azure-postgres-benefits.png)
+
+1a-azure-postgres-benefits.png
+
 The service provides a relational database solution with horizontal scalability across as many machines - and locations - as needed. You don’t have to give up transactions, joins, and foreign keys for the ability to scale.
 
 Azure Postgres benefits: High availability, fully managed, intelligent performance.
