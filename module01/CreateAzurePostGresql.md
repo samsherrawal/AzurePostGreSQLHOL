@@ -21,15 +21,15 @@ To create an Azure Database for PostgreSQL server, take the following steps:
 
 2. Select **Databases** > **Azure Database for PostgreSQL**.
 
-    :::image type="content" source="./1-create-database.png" alt-text="The Azure Database for PostgreSQL in menu":::
+   ![1-create-database](./1-create-database.png) 
 
 3. Select the **Flexible server** deployment option.
 
-   :::image type="content" source="./2-select-deployment-option.png" alt-text="Select Azure Database for PostgreSQL - Flexible server deployment option":::
+    ![2-select-deployment-option](./2-select-deployment-option.png) 
 
 4. Fill out the **Basics** form with the following information:
 
-    :::image type="content" source="./3-create-basics.png" alt-text="Create a server":::
+    ![3-create-basics](./3-create-basics.png) 
 
     Setting|Suggested Value|Description
     ---|---|---
@@ -45,8 +45,8 @@ To create an Azure Database for PostgreSQL server, take the following steps:
     Version|The latest major version| The latest PostgreSQL major version, unless you have specific requirements otherwise.
     Compute + storage | **General Purpose**, **4 vCores**, **512 GB**, **7 days** | The compute, storage, and backup configurations for your new server. Select **Configure server**. *General Purpose*, *4 vCores*, *512 GB*, and *7 days* are the default values for **Compute tier**, **vCore**, **Storage**, and **Backup Retention Period**.  You can leave those sliders as is or adjust them. <br> <br> To configure your server with **Geo-redundant Backup** to protect from region-level failures, you can check the box ON. Note that the Geo-redundant backup can be configured only at the time of server creation. To save this pricing tier selection, select **OK**. The next screenshot captures these selections.
 
-    :::image type="content" source="./4-pricing-tier-geo-backup.png" alt-text="The Pricing tier pane":::
 
+ ![4-pricing-tier-geo-backup](./4-pricing-tier-geo-backup.png)
     
 5. Configure Networking options
 6. 
@@ -61,16 +61,14 @@ To create an Azure Database for PostgreSQL server, take the following steps:
     > [!NOTE]
     > You can't change the connectivity method after you create the server. For example, if you select **Public access (allowed IP addresses)** when you create the server, you can't change to **Private access (VNet Integration)** after the server is created. We highly recommend that you create your server with private access to help secure access to your server via VNet Integration. [Learn more about private access in the concepts article.](./concepts-networking.md)
 
+    ![5-networking.png](./5-networking.png)
 
-    :::image type="content" source="./5-networking.png" alt-text="The Networking pane":::
-
-  
 
 6. Select **Review + create** to review your selections. Select **Create** to provision the server. This operation may take a few minutes.
 
 7. On the toolbar, select the **Notifications** icon (a bell) to monitor the deployment process. Once the deployment is done, you can select **Pin to dashboard**, which creates a tile for this server on your Azure portal dashboard as a shortcut to the server's **Overview** page. Selecting **Go to resource** opens the server's **Overview** page.
 
-    :::image type="content" source="./7-notifications.png" alt-text="The Notifications pane":::
+      ![7-notifications](./7-notifications.png)
 
    By default, a **postgres** database is created under your server. The [postgres](https://www.postgresql.org/docs/current/static/app-initdb.html) database is a default database that's meant for use by users, utilities, and third-party applications. (The other default database is **azure_maintenance**. Its function is to separate the managed service processes from user actions. You cannot access this database.)
 
@@ -84,61 +82,7 @@ When you create your Azure Database for PostgreSQL server, a default database na
 
 Open your server's **Overview** page. Make a note of the **Server name** and the **Server admin login name**. Hover your cursor over each field, and the copy symbol appears to the right of the text. Select the copy symbol as needed to copy the values.
 
- :::image type="content" source="./8-server-name.png" alt-text="The server Overview page":::
-
-## Connect to the PostgreSQL database using psql
-
-There are a number of applications you can use to connect to your Azure Database for PostgreSQL server. If your client computer has PostgreSQL installed, you can use a local instance of [psql](https://www.postgresql.org/docs/current/static/app-psql.html) to connect to an Azure PostgreSQL server. Let's now use the psql command-line utility to connect to the Azure PostgreSQL server.
-
-1. Run the following psql command to connect to an Azure Database for PostgreSQL server
-
-   ```bash
-   psql --host=<servername> --port=<port> --username=<user> --dbname=<dbname>
-   ```
-
-   For example, the following command connects to the default database called **postgres** on your PostgreSQL server **mydemoserver.postgres.database.azure.com** using access credentials. Enter the `<server_admin_password>` you chose when prompted for password.
-  
-   ```bash
-   psql --host=mydemoserver-pg.postgres.database.azure.com --port=5432 --username=myadmin --dbname=postgres
-   ```
-
-   After you connect, the psql utility displays a postgres prompt where you type sql commands. In the initial connection output, a warning may appear because the psql you're using might be a different version than the Azure Database for PostgreSQL server version.
-
-   Example psql output:
-
-   ```bash
-   psql (12.3 (Ubuntu 12.3-1.pgdg18.04+1), server 13.2)
-   WARNING: psql major version 12, server major version 13.
-         Some psql features might not work.
-   SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, bits: 256, compression: off)
-   Type "help" for help.
-
-   postgres=>
-
-   ```
-
-   > [!TIP]
-   > If the firewall is not configured to allow the IP address of your client, the following error occurs:
-   >
-   > "psql: FATAL:  no pg_hba.conf entry for host `<IP address>`, user "myadmin", database "postgres", SSL on FATAL: SSL connection is required. Specify SSL options and retry.
-   >
-   > Confirm your client's IP is allowed in the firewall rules step above.
-
-2. Create a blank database called "mypgsqldb" at the prompt by typing the following command:
-
-    ```bash
-    CREATE DATABASE mypgsqldb;
-    ```
-
-3. At the prompt, execute the following command to switch connections to the newly created database **mypgsqldb**:
-
-    ```bash
-    \c mypgsqldb
-    ```
-
-4. Type  `\q`, and then select the Enter key to quit psql.
-
-You connected to the Azure Database for PostgreSQL server via psql, and you created a blank user database.
+ ![8-server-name](./8-server-name.png)
 
 ## Clean up resources
 
@@ -166,5 +110,5 @@ To delete only the newly created server:
 ## Next steps
 
 Connect Flexible Server.
-
-- [Connect Flexible Server](./ConnectPGSql.md)
+- [Connect Flexible Server Using psql](./ConnectPGUsingpsql.md)
+- [Connect Flexible Server Using PgAdmin](./ConnectPGSql.md)
