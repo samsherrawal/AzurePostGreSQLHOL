@@ -107,5 +107,5 @@ The flexible server comes with a [built-in PgBouncer](concepts-pgbouncer.md), a 
 
 Create Flexible Server.
 
-- [Flexible Server](../flexible-server/overview.md)
+- [Flexible Server](../CreateAzurePostGresql.md)
 
