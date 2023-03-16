@@ -103,3 +103,9 @@ The flexible server service is equipped with built-in performance monitoring and
 
 The flexible server comes with a [built-in PgBouncer](concepts-pgbouncer.md), a connection pooler. You can optionally enable it and connect your applications to your database server via PgBouncer using the same host name and the port 6432.
 
+## Next steps
+
+Create Flexible Server.
+
+- [Flexible Server](../flexible-server/overview.md)
+
