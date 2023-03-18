@@ -48,13 +48,21 @@ In the event of the Azure Database for PostgreSQL - Flexible Server service outa
 
 * **Azure portal banner**
 If your subscription is identified to be impacted, there will be an outage alert of a Service Issue in your Azure portal **Notifications**.
-:::image type="content" source="./media/business-continuity/notification-service-issue-example.png" alt-text=" Screenshot showing notifications in Azure portal.":::
+
+![notification-service-issue-example](./image/notification-service-issue-example.png)
+
 * **Help + support** or **Support + troubleshooting**
 When you create support ticket from **Help + support** or **Support + troubleshooting**, there will be information about any issues impacting your resources. Select View outage details for more information and a summary of impact. There will also be an alert in the New support request page.
-:::image type="content" source="./media/business-continuity/help-support-service-health-notification.png" alt-text=" Screenshot showing Help Support notifications in Azure portal.":::
+
+![help-support-service-health-notification](./image/help-support-service-health-notification.png)
+
+
 *  **Service Help**
 The **Service Health** page in the Azure portal contains information about Azure data center status globally. Search for "service health" in the search bar in the Azure portal, then view Service issues in the Active events category. You can also view the health of individual resources in the **Resource health** page of any resource under the Help menu. A sample screenshot of the Service Health page follows, with information about an active service issue in Southeast Asia.
-:::image type="content" source="./media/business-continuity/service-health-service-issues-example-map.png" alt-text=" Screenshot showing service outage in Service Health portal.":::
+
+![service-health-service-issues-example-map](./image/service-health-service-issues-example-map.png)
+
+
 ### Unplanned downtime: failure scenarios and service recovery
 
 Below are some unplanned failure scenarios and the recovery process. 
