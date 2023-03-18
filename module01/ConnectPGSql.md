@@ -56,6 +56,8 @@ By default, the database to which pgAdmin connects is the Postgres database. The
 
 ![pgadmin-connection-properties-pgadmin](./image/pgadmin-connection-properties-for-azure-database-f.png)
 
+- [Connect Flexible Server Using psql](./ConnectPGUsingpsql.md)
+
 
 
 

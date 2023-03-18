@@ -51,3 +51,5 @@ There are a number of applications you can use to connect to your Azure Database
 4. Type  `\q`, and then select the Enter key to quit psql.
 
 You connected to the Azure Database for PostgreSQL server via psql, and you created a blank user database.
+
+- [Connect Flexible Server Using PgAdmin](./ConnectPGSql.md)

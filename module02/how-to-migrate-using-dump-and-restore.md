@@ -1,7 +1,6 @@
 
 # Migrate your PostgreSQL database by using dump and restore
 
-[!INCLUDE[applies-to-postgres-single-flexible-server](../includes/applies-to-postgresql-single-flexible-server.md)]
 
 You can use [pg_dump](https://www.postgresql.org/docs/current/static/app-pgdump.html) to extract a PostgreSQL database into a dump file. Then use [pg_restore](https://www.postgresql.org/docs/current/static/app-pgrestore.html) to restore the PostgreSQL database from an archive file created by `pg_dump`.
 
@@ -26,37 +25,78 @@ pg_dump -Fc -v --host=localhost --username=masterlogin --dbname=testdb -f testdb
 
 ## Restore the data into the target database
 
+Download the PostgreSQL DVD Rental sample database from dbdump folder. The database file is in zip format (dvdrental.zip) and you need to extract it to dvdrental.tar before restoring it inot the PostgreSQL database intance.
+
+## Restore the DVD Rental database using the psql
+
+First launch the psql tool.
+
+Execute the following CREATE DATABASE statement to create a new database called dvdrental.
+
+CREATE DATABASE dvdrental;
+
+
 After you've created the target database, you can use the `pg_restore` command and the  `--dbname` parameter to restore the data into the target database from the dump file.
 
 ```bash
-pg_restore -v --no-owner --host=<server name> --port=<port> --username=<user-name> --dbname=<target database name> <database>.dump
+pg_restore -v --no-owner --host=<server name> --port=<port> --username=<user-name> --dbname=<target database name> C:\sampledb\dvdrental.tar
 ```
 
 Including the `--no-owner` parameter causes all objects created during the restore to be owned by the user specified with `--username`. For more information, see the [PostgreSQL documentation](https://www.postgresql.org/docs/9.6/static/app-pgrestore.html).
 
-> [!NOTE]
+> Please Note:
 > On Azure Database for PostgreSQL servers, TLS/SSL connections are on by default. If your PostgreSQL server requires TLS/SSL connections, but doesn't have them, set an environment variable `PGSSLMODE=require` so that the pg_restore tool connects with TLS. Without TLS, the error might read: "FATAL: SSL connection is required. Please specify SSL options and retry." In the Windows command line, run the command `SET PGSSLMODE=require` before running the `pg_restore` command. In Linux or Bash, run the command `export PGSSLMODE=require` before running the `pg_restore` command. 
 >
 
-In this example, restore the data from the dump file **testdb.dump** into the database **mypgsqldb**, on target server **mydemoserver.postgres.database.azure.com**.
+In this example, restore the data from the dump file **dvdrental.tar** into the database **dvdrental**, on target server **mydemoserver.postgres.database.azure.com**.
 
-Here's an example for how to use this `pg_restore` for Single Server:
-
-```bash
-pg_restore -v --no-owner --host=mydemoserver.postgres.database.azure.com --port=5432 --username=mylogin@mydemoserver --dbname=mypgsqldb testdb.dump
-```
 
 Here's an example for how to use this `pg_restore` for Flexible Server:
 
 ```bash
-pg_restore -v --no-owner --host=mydemoserver.postgres.database.azure.com --port=5432 --username=mylogin --dbname=mypgsqldb testdb.dump
+pg_restore -v --no-owner --host=mydemoserver.postgres.database.azure.com --port=5432 --username=mylogin --dbname=mypgsqldb C:\sampledb\dvdrental.tar
 ```
+## Restore the DVD Rental database using the pgAdmin
+
+The step by step directions on how to use the pgAdmin tool to restore the sample database from the database file:
+
+First, launch the pgAdmin tool and connect to the PostgreSQL server.
+
+Second, right click the Databases and select the Create > Database… menu option:
+
+
+![Load-PostgreSQL-Database-Create-New-Database](./image/Load-PostgreSQL-Database-Create-New-Database.png) 
+
+Next, enter the database name dvdrental and click the Save button:
+
+![Load-PostgreSQL-Database-Create-Database](./image/Load-PostgreSQL-Database-Create-Database.png) 
+
+You’ll see the new empty database created under the Databases node:
+
+![Load-PostgreSQL-Database-Select-dvdrental](./image/Load-PostgreSQL-Database-Select-dvdrental.png) 
+
+Next, right-click on the dvdrental database and choose Restore… menu item to restore the database from the downloaded database file:
+
+![Load-PostgreSQL-Database-Restore-Database](./image/Load-PostgreSQL-Database-Restore-Database.png) 
+
+Next, enter the path to the sample database file e.g., c:\sampledb\dvdrental.tar and click the Restore button:
+
+![Load-PostgreSQL-Database-Restore-DvdRental-Database](./image/Load-PostgreSQL-Database-Restore-DvdRental-Database.png) 
+
+Next, the restore process will complete in few seconds and shows the following dialog once it completes:
+
+![Load-PostgreSQL-Database-Success](./image/Load-PostgreSQL-Database-Success.png)
+
+Finally, open the dvdrental database from object browser panel, you will find tables in the public schema and other database objects as shown in the following image:
+
+![PostgreSQL-Load-Sample-Database-pgAdmin-step-3](./image/PostgreSQL-Load-Sample-Database-pgAdmin-step-3.png)
+
 
 ## Optimize the migration process
 
 One way to migrate your existing PostgreSQL database to Azure Database for PostgreSQL is to back up the database on the source and restore it in Azure. To minimize the time required to complete the migration, consider using the following parameters with the backup and restore commands.
 
-> [!NOTE]
+> Please Note:
 > For detailed syntax information, see [pg_dump](https://www.postgresql.org/docs/current/static/app-pgdump.html) and [pg_restore](https://www.postgresql.org/docs/current/static/app-pgrestore.html).
 >
 
@@ -65,7 +105,7 @@ One way to migrate your existing PostgreSQL database to Azure Database for Postg
 Take the backup with the `-Fc` switch, so that you can perform the restore in parallel to speed it up. For example:
 
 ```bash
-pg_dump -h my-source-server-name -U source-server-username -Fc -d source-databasename -f Z:\Data\Backups\my-database-backup.dump
+pg_dump -h my-source-server-name -U source-server-username -Fc -d source-databasename -f Z:\Data\Backups\dvdrental.dump
 ```
 
 ### For the restore
@@ -79,13 +119,13 @@ pg_dump -h my-source-server-name -U source-server-username -Fc -d source-databas
     Here's an example for how to use this `pg_restore` for Single Server:
 
     ```bash
-     pg_restore -h my-target-server.postgres.database.azure.com -U azure-postgres-username@my-target-server -j 4 -d my-target-databasename Z:\Data\Backups\my-database-backup.dump
+     pg_restore -h my-target-server.postgres.database.azure.com -U azure-postgres-username@my-target-server -j 4 -d my-target-databasename Z:\Data\Backups\dvdrental.dump
     ```
 
     Here's an example for how to use this `pg_restore` for Flexible Server:
 
     ```bash
-     pg_restore -h my-target-server.postgres.database.azure.com -U azure-postgres-username -j 4 -d my-target-databasename Z:\Data\Backups\my-database-backup.dump
+     pg_restore -h my-target-server.postgres.database.azure.com -U azure-postgres-username -j 4 -d my-target-databasename Z:\Data\Backups\dvdrental.dump
     ```
 
 - You can also edit the dump file by adding the command `set synchronous_commit = off;` at the beginning, and the command `set synchronous_commit = on;` at the end. Not turning it on at the end, before the apps change the data, might result in subsequent loss of data.
