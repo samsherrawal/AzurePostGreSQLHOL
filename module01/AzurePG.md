@@ -57,7 +57,7 @@ Flexible servers are best suited for
 
 Azure Database for PostgreSQL - Flexible Server is a fully managed database service designed to provide more granular control and flexibility over database management functions and configuration settings. In general, the service provides more flexibility and server configuration customizations based on the user requirements. The flexible server architecture allows users to collocate database engine with the client-tier for lower latency,  choose high availability within a single availability zone and across multiple availability zones. Flexible servers also provide better cost optimization controls with ability to stop/start your server and burstable compute tier that is ideal for workloads that do not need full compute capacity continuously. The service currently supports community version of [PostgreSQL 11, 12, 13, and 14](./concepts-supported-versions.md). The service is currently available in wide variety of  [Azure regions](https://azure.microsoft.com/global-infrastructure/services/).
 
-![Flexible Server - Overview](./overview-flexible-server.png)
+![Flexible Server - Overview](./image/overview-flexible-server.png)
 
 Flexible servers are best suited for
 
@@ -71,7 +71,7 @@ The flexible server deployment model is designed to support high availability wi
 
 If zone redundant high availability is configured, the service provisions and maintains a warm standby server across availability zone within the same Azure region. The data changes on the source server are synchronously replicated to the standby server to ensure zero data loss. With zone redundant high availability, once the planned or unplanned failover event is triggered, the standby server comes online immediately and is available to process incoming transactions. This allows the service resiliency from availability zone failure within an Azure region that supports multiple availability zones as shown in the picture below.
 
-![high-availability-architecture](./concepts-zone-redundant-high-availability-architecture.png)
+![high-availability-architecture](./image/concepts-zone-redundant-high-availability-architecture.png)
 
 ## Automated patching with managed maintenance window
 

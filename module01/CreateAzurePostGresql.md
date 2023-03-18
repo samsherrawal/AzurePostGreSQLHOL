@@ -21,15 +21,15 @@ To create an Azure Database for PostgreSQL server, take the following steps:
 
 2. Select **Databases** > **Azure Database for PostgreSQL**.
 
-   ![1-create-database](./1-create-database.png) 
+   ![1-create-database](./image/1-create-database.png) 
 
 3. Select the **Flexible server** deployment option.
 
-    ![2-select-deployment-option](./2-select-deployment-option.png) 
+    ![2-select-deployment-option](./image/2-select-deployment-option.png) 
 
 4. Fill out the **Basics** form with the following information:
 
-    ![3-create-basics](./3-create-basics.png) 
+    ![3-create-basics](./image/3-create-basics.png) 
 
     Setting|Suggested Value|Description
     ---|---|---
@@ -46,7 +46,7 @@ To create an Azure Database for PostgreSQL server, take the following steps:
     Compute + storage | **General Purpose**, **4 vCores**, **512 GB**, **7 days** | The compute, storage, and backup configurations for your new server. Select **Configure server**. *General Purpose*, *4 vCores*, *512 GB*, and *7 days* are the default values for **Compute tier**, **vCore**, **Storage**, and **Backup Retention Period**.  You can leave those sliders as is or adjust them. <br> <br> To configure your server with **Geo-redundant Backup** to protect from region-level failures, you can check the box ON. Note that the Geo-redundant backup can be configured only at the time of server creation. To save this pricing tier selection, select **OK**. The next screenshot captures these selections.
 
 
- ![4-pricing-tier-geo-backup](./4-pricing-tier-geo-backup.png)
+ ![4-pricing-tier-geo-backup](./image/4-pricing-tier-geo-backup.png)
     
 5. Configure Networking options
 6. 
@@ -61,14 +61,14 @@ To create an Azure Database for PostgreSQL server, take the following steps:
     > [!NOTE]
     > You can't change the connectivity method after you create the server. For example, if you select **Public access (allowed IP addresses)** when you create the server, you can't change to **Private access (VNet Integration)** after the server is created. We highly recommend that you create your server with private access to help secure access to your server via VNet Integration. [Learn more about private access in the concepts article.](./concepts-networking.md)
 
-    ![5-networking.png](./5-networking.png)
+    ![5-networking.png](./image/5-networking.png)
 
 
 6. Select **Review + create** to review your selections. Select **Create** to provision the server. This operation may take a few minutes.
 
 7. On the toolbar, select the **Notifications** icon (a bell) to monitor the deployment process. Once the deployment is done, you can select **Pin to dashboard**, which creates a tile for this server on your Azure portal dashboard as a shortcut to the server's **Overview** page. Selecting **Go to resource** opens the server's **Overview** page.
 
-      ![7-notifications](./7-notifications.png)
+      ![7-notifications](./image/7-notifications.png)
 
    By default, a **postgres** database is created under your server. The [postgres](https://www.postgresql.org/docs/current/static/app-initdb.html) database is a default database that's meant for use by users, utilities, and third-party applications. (The other default database is **azure_maintenance**. Its function is to separate the managed service processes from user actions. You cannot access this database.)
 
@@ -82,7 +82,7 @@ When you create your Azure Database for PostgreSQL server, a default database na
 
 Open your server's **Overview** page. Make a note of the **Server name** and the **Server admin login name**. Hover your cursor over each field, and the copy symbol appears to the right of the text. Select the copy symbol as needed to copy the values.
 
- ![8-server-name](./8-server-name.png)
+ ![8-server-name](./image/8-server-name.png)
 
 ## Clean up resources
 
