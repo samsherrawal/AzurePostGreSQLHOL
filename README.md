@@ -43,9 +43,10 @@ As you’re considering cloud-hosted database offerings, important qualities to 
 ## :books: Learning Modules
 
 1. [Create an Azure Database for PostgreSQL](./module01/CreateAzurePostGresql.md)
-2. [Migrate your PostgreSQL database](./modules/module02/how-to-migrate-using-dump-and-restore.md)
-3. [Backup and restore in Azure Database for PostgreSQL](./modules/module03/concepts-backup-restore.md)
-4. [Writing Queries](./modules/module04.md)
+2. [Connecting to PostgreSQL database](./modules/module02/how-to-migrate-using-dump-and-restore.md)
+3. [Migrate your PostgreSQL database](./modules/module02/how-to-migrate-using-dump-and-restore.md)
+4. [Backup and restore in Azure Database for PostgreSQL](./modules/module03/concepts-backup-restore.md)
+5. [Writing Queries](./modules/module04.md)
 
 
 <div align="right"><a href="#microsoft-AzurePostGreSQL-workshop">↥ back to top</a></div>
