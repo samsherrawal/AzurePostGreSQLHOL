@@ -1,7 +1,7 @@
 
 # Manage an Azure Database for PostgreSQL - Flexible Server by using the Azure CLI
 
-[!INCLUDE [applies-to-postgresql-flexible-server](../includes/applies-to-postgresql-flexible-server.md)]
+
 
 This article shows you how to manage your flexible server deployed in Azure. Management tasks include compute and storage scaling, admin password reset, and viewing server details.
 
@@ -43,8 +43,7 @@ resource-group | myresourcegroup | Provide the name of the Azure resource group.
 sku-name|Standard_D4ds_v3|Enter the name of the compute tier and size. The value follows the convention *Standard_{VM size}* in shorthand. See the [pricing tiers](../concepts-pricing-tiers.md) for more information.
 storage-size | 6144 | Enter the storage capacity of the server in megabytes. The minimum is 5120, increasing in increments of 1024.
 
-> [!IMPORTANT]
-> You cannot scale down storage. 
+Please Note  You cannot scale down storage. 
 
 ## Manage PostgreSQL databases on a server
 
@@ -122,7 +121,3 @@ To delete the Azure Database for PostgreSQL flexible server, run the [az postgre
 az postgres flexible-server delete --resource-group myresourcegroup --name mydemoserver
 ```
 
-## Next steps
-
-- [Understand backup and restore concepts](concepts-backup-restore.md)
-- [Tune and monitor the server](concepts-monitoring.md)

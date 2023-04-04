@@ -2,7 +2,7 @@
 
 # Server parameters in Azure Database for PostgreSQL - Flexible Server
 
-[!INCLUDE [applies-to-postgresql-flexible-server](../includes/applies-to-postgresql-flexible-server.md)]
+
 
 Azure Database for PostgreSQL provides a subset of configurable parameters for each server. For more information on Postgres parameters, see the [PostgreSQL documentation](https://www.postgresql.org/docs/current/config-setting.html).
 
@@ -12,8 +12,7 @@ Azure Database for PostgreSQL server is pre-configured with optimal default valu
 
 In order to review which parameters are available to view or to modify, we recommend going into the Azure portal, and to the Server Parameters page. You can also configure parameters on a per-user or per-database basis using `ALTER DATABASE` or `ALTER ROLE` commands.
 
->[!NOTE]
-> Since Azure Database for PostgreSQL is a managed database service, users are not provided host or OS access to view or modify configuration files such as `postgresql.conf`. The content of the file is automatically updated based on parameter changes in the Server Parameters page.
+Please Note  Since Azure Database for PostgreSQL is a managed database service, users are not provided host or OS access to view or modify configuration files such as `postgresql.conf`. The content of the file is automatically updated based on parameter changes in the Server Parameters page.
 
 :::image type="content" source="./media/concepts-server-parameters/server-parameters.png" alt-text="Server parameters - portal":::
 

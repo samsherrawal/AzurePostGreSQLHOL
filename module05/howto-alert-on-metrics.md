@@ -2,7 +2,7 @@
 
 # Use the Azure portal to set up alerts on metrics for Azure Database for PostgreSQL - Flexible Server
 
-[!INCLUDE [applies-to-postgresql-flexible-server](../includes/applies-to-postgresql-flexible-server.md)]
+
 
 This article shows you how to set up Azure Database for PostgreSQL alerts using the Azure portal. You can receive an alert based on monitoring metrics for your Azure services.
 
@@ -76,7 +76,3 @@ Once you have created an alert, you can select it and do the following actions:
 * **Edit** or **Delete** the alert rule.
 * **Disable** or **Enable** the alert, if you want to temporarily stop or resume receiving notifications.
 
-## Next steps
-
-* Learn more about [configuring webhooks in alerts](../../azure-monitor/alerts/alerts-webhooks.md).
-* Get an [overview of metrics collection](../../azure-monitor/data-platform.md) to make sure your service is available and responsive.

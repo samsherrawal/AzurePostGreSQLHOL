@@ -2,13 +2,11 @@
 
 # Configure server parameters in Azure Database for PostgreSQL - Flexible Server via the Azure portal 
 
-[!INCLUDE [applies-to-postgresql-flexible-server](../includes/applies-to-postgresql-flexible-server.md)]
+
 
 You can list, show, and update configuration parameters for an Azure Database for PostgreSQL server through the Azure portal. In addition, you can also click on the **Server Parameter Tabs** to easily view parameter group as **Modified**, **Static**, **Dynamic** and **Read-Only**.
 
-## Prerequisites
-To step through this how-to guide you need:
-- [Azure Database for PostgreSQL - Flexible server](quickstart-create-server-portal.md)
+
 
 ## Viewing and editing parameters
 1. Open the [Azure portal](https://portal.azure.com).
@@ -106,8 +104,5 @@ PostgreSQL allows you to specify time zones in three different forms:
 3. In addition to the timezone names and abbreviations, PostgreSQL will accept POSIX-style time zone specifications of the form STDoffset or STDoffsetDST, where STD is a zone abbreviation, offset is a numeric offset in hours west from UTC, and DST is an optional daylight-savings zone abbreviation, assumed to stand for one hour ahead of the given offset. 
    
 
-## Next steps
-Learn about:
-- [Overview of server parameters in Azure Database for PostgreSQL](concepts-server-parameters.md)
-- [Configure Azure Database for PostgreSQL - Flexible Server parameters via CLI](howto-configure-server-parameters-using-cli.md)
+
   
