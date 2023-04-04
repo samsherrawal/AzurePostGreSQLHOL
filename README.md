@@ -38,7 +38,7 @@ As you’re considering cloud-hosted database offerings, important qualities to 
 
 ## :books: Preface
 
-* [Preface: Welcome to Azure PostgreSQL database](./modules/preface.md)
+* [Preface: Welcome to Azure PostgreSQL database](./modules/module01/AzurePG.md)
 
 ## :books: Learning Modules
 
