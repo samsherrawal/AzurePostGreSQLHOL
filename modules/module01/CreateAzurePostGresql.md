@@ -1,6 +1,6 @@
 # Module 01 - Create an Azure Database for PostgreSQL - Flexible Server in the Azure portal
 
-[< Previous Module](../README.md) - **[Home](../README.md)** - [Next Module >](../modules/module02.md)
+[< Previous Module](../../README.md) - **[Home](../../README.md)** - [Next Module >](../modules/module02.md)
 
 
 Azure Database for PostgreSQL is a managed service that you use to run, manage, and scale highly available PostgreSQL databases in the cloud. This Quickstart shows you how to create an Azure Database for PostgreSQL - Flexible Server in about five minutes using the Azure portal.
