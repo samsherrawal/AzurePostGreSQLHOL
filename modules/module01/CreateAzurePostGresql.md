@@ -87,7 +87,7 @@ Open your server's **Overview** page. Make a note of the **Server name** and the
 
 ## Next steps
 
-[Continue >](../modules/module02.md)
+[Continue >](modules/module01/ConnectPGUsingpsql.md)
 
 Connect Flexible Server.
 - [Connect Flexible Server Using psql](./ConnectPGUsingpsql.md)
