@@ -28,3 +28,24 @@ As an example, let’s say you work for Woodgrove Bank, and you’re developing 
 If your app was released, the on-premises server could easily become overloaded, which might cause slow transaction times, or even customer data loss or corruption. To avoid this problem, you need to scale the database solution for both capacity and performance. It's also a good idea to host data in more than one location, which means moving away from your current on-premises database server, without compromising security.
 
 As you’re considering cloud-hosted database offerings, important qualities to consider include usability, scalability, and security. In this module, we'll refer back to the payment app scenario to evaluate the qualities of Azure Database for PostgreSQL and assess use cases.
+
+## :thinking: Prerequisites
+
+* An [Azure account](https://azure.microsoft.com/free/) with an active subscription. Note: If you don't have access to an Azure subscription, you may be able to start with a [free account](https://www.azure.com/free).
+* You must have the necessary privileges within your Azure subscription to create resources, perform role assignments, register resource providers (if required), etc.
+* Download and Install PG Admin tool [ PG Admin](https://www.pgadmin.org/download/pgadmin-4-windows/)
+* Visual Studio Code installed
+
+## :books: Preface
+
+* [Preface: Welcome to Azure PostgreSQL database](./modules/preface.md)
+
+## :books: Learning Modules
+
+1. [Create an Azure Database for PostgreSQL](./module01/CreateAzurePostGresql.md)
+2. [Migrate your PostgreSQL database](./modules/module02/how-to-migrate-using-dump-and-restore.md)
+3. [Backup and restore in Azure Database for PostgreSQL](./modules/module03/concepts-backup-restore.md)
+4. [Writing Queries](./modules/module04.md)
+
+
+<div align="right"><a href="#microsoft-AzurePostGreSQL-workshop">↥ back to top</a></div>
