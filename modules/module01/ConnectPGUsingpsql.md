@@ -52,4 +52,8 @@ There are a number of applications you can use to connect to your Azure Database
 
 You connected to the Azure Database for PostgreSQL server via psql, and you created a blank user database.
 
-- [Connect Flexible Server Using PgAdmin](./ConnectPGSql.md)
+# Connecting to Azure Database for PostgreSQL with pgAdmin
+
+We will connect to an instance of Azure Database for PostgreSQL using pgAdmin
+
+[Connect Flexible Server Using PgAdmin](./ConnectPGSql.md)
