@@ -2,7 +2,7 @@
 
 # Configure and Access Logs in Azure Database for PostgreSQL - Flexible Server
 
-[!INCLUDE [applies-to-postgresql-flexible-server](../includes/applies-to-postgresql-flexible-server.md)]
+
 
 PostgreSQL logs are available on every node of a flexible server. You can ship logs to a storage server, or to an analytics service. The logs can be used to identify, troubleshoot, and repair configuration errors and suboptimal performance.
 
@@ -55,7 +55,4 @@ AzureDiagnostics
 
 The query above will show results over the last 6 hours for any Postgres server logging in this workspace.
 
-## Next steps
 
-- [Get started with log analytics queries](../../azure-monitor/logs/log-analytics-tutorial.md)
-- Learn about [Azure event hubs](../../event-hubs/event-hubs-about.md)

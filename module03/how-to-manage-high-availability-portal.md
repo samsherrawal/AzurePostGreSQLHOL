@@ -2,7 +2,6 @@
 
 # Manage high availability in Flexible Server
 
-[!INCLUDE [applies-to-postgresql-flexible-server](../includes/applies-to-postgresql-flexible-server.md)]
 
 This article describes how you can enable or disable high availability configuration in your flexible server in both zone-redundant and same-zone deployment models.
 
@@ -10,10 +9,6 @@ High availability feature provisions physically separate primary and standby rep
 
 This page provides guidelines how you can enable or disable high availability. This operation does not change your other settings including VNET configuration, firewall settings, and backup retention. Similarly, enabling and disabling of high availability is an online operation and does not impact your application connectivity and operations.
 
-## Pre-requisites
-
-> [!IMPORTANT]
-> For the list of regions that support Zone redundant high availability, please review the supported regions [here](./overview.md#azure-regions).  
 
 ## Enable high availability during server creation
 
@@ -137,13 +132,10 @@ Follow these steps to perform a planned failover from your primary to the standb
 ![ha-planned-failover](./image/ha-planned-failover.png)
 
 
->[!IMPORTANT] 
->
-> * Please do not perform immediate, back-to-back failovers. Wait for at least 15-20 minutes between failovers, which will also allow the new standby server to be fully established.
->
-> * It is recommended to perform planned failover during low activity period.
->
-> * The overall end-to-end operation time may be longer than the actual downtime experienced by the application. Please measure the downtime from the application perspective.
+
+ * It is recommended to perform planned failover during low activity period.
+
+* The overall end-to-end operation time may be longer than the actual downtime experienced by the application. Please measure the downtime from the application perspective.
 
 ## Enabling Zone redundant HA after the region supports AZ
 

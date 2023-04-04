@@ -2,7 +2,7 @@
 
 # Backup and restore in Azure Database for PostgreSQL - Flexible Server
 
-[!INCLUDE [applies-to-postgresql-flexible-server](../includes/applies-to-postgresql-flexible-server.md)]
+
 
 Backups form an essential part of any business continuity strategy. They help protect data from accidental corruption or deletion. 
 
@@ -10,7 +10,7 @@ Azure Database for PostgreSQL - Flexible Server automatically performs regular b
 
 ## Backup overview
 
-Flexible Server takes snapshot backups of data files and stores them securely in zone-redundant storage or locally redundant storage, depending on the [region](overview.md#azure-regions). The server also backs up transaction logs when the write-ahead log (WAL) file is ready to be archived. You can use these backups to restore a server to any point in time within your configured backup retention period. 
+Flexible Server takes snapshot backups of data files and stores them securely in zone-redundant storage or locally redundant storage, depending on the region. The server also backs up transaction logs when the write-ahead log (WAL) file is ready to be archived. You can use these backups to restore a server to any point in time within your configured backup retention period. 
 
 The default backup retention period is 7 days, but you can extend the period to a maximum of 35 days. All backups are encrypted through AES 256-bit encryption for data stored at rest.
 
@@ -42,7 +42,7 @@ Flexible Server offers three options:
 
   This option provides the ability to restore your server in a different region in the event of a disaster. It also provides at least 99.99999999999999 percent (16 nines) durability of backup objects over a year. 
   
-  Geo-redundancy is supported for servers hosted in any of the [Azure paired regions](../../availability-zones/cross-region-replication-azure.md). 
+  Geo-redundancy is supported for servers hosted in any of the Azure paired regions. 
 
 ## Moving from other backup storage options to geo-redundant backup storage 
 
@@ -66,8 +66,8 @@ If you configured your server with geo-redundant backup, the backup data is also
 
 You can use the [Backup Storage Used](../concepts-monitoring.md) metric in the Azure portal to monitor the backup storage that a server consumes. The Backup Storage Used metric represents the sum of storage consumed by all the retained database backups and log backups, based on the backup retention period set for the server. 
 
->[!Note]
-> Irrespective of the database size, heavy transactional activity on the server generates more WAL files. The increase in files in turn increases the backup storage.
+
+Please Note Irrespective of the database size, heavy transactional activity on the server generates more WAL files. The increase in files in turn increases the backup storage.
 
 ## Point-in-time recovery
 
@@ -79,8 +79,7 @@ For example, assume that the backups are performed at 11:00 PM every night. If t
 
 To restore your database server, see [these steps](./how-to-restore-server-portal.md).
 
-> [!IMPORTANT]
-> A restore operation in Flexible Server always creates a new database server with the name that you provide. It doesn't overwrite the existing database server.
+Please Note A restore operation in Flexible Server always creates a new database server with the name that you provide. It doesn't overwrite the existing database server.
 
 PITR is useful in scenarios like these:
 
@@ -100,20 +99,19 @@ For latest and custom restore point options, the estimated time to recover depen
 
 If you've configured your server within a virtual network, you can restore to the same virtual network or to a different virtual network. However, you can't restore to public access. Similarly, if you configured your server with public access, you can't restore to private virtual network access.
 
-> [!IMPORTANT]
-> A user can't restore deleted servers. If you delete a server, all databases that belong to the server are also deleted and can't be recovered. To help protect server resources from accidental deletion or unexpected changes after deployment, administrators can use [management locks](../../azure-resource-manager/management/lock-resources.md). 
->
->If you accidentally deleted your server, please reach out to support. In some cases, your server might be restored with or without data loss.
+Please Note A user can't restore deleted servers. If you delete a server, all databases that belong to the server are also deleted and can't be recovered. To help protect server resources from accidental deletion or unexpected changes after deployment, administrators can use management locks. 
+
+If you accidentally deleted your server, please reach out to support. In some cases, your server might be restored with or without data loss.
 
 
 ## Geo-redundant backup and restore
 
-To enable geo-redundant backup from the **Compute + storage** pane in the Azure portal, see the [quickstart guide](./quickstart-create-server-portal.md). 
+To enable geo-redundant backup from the **Compute + storage** pane in the Azure portal, see the quickstart guide. 
 
->[!IMPORTANT]
-> Geo-redundant backup can be configured only at the time of server creation. 
 
-After you've configured your server with geo-redundant backup, you can restore it to a [geo-paired region](../../availability-zones/cross-region-replication-azure.md). For more information, see the [supported regions](overview.md#azure-regions) for geo-redundant backup.
+Please Note Geo-redundant backup can be configured only at the time of server creation. 
+
+After you've configured your server with geo-redundant backup, you can restore it to a geo-paired region. For more information, see the supported regions for geo-redundant backup.
 
 When the server is configured with geo-redundant backup, the backup data and transaction logs are copied to the paired region asynchronously through storage replication. After you create a server, wait at least one hour before initiating a geo-restore. That will allow the first set of backup data to be replicated to the paired region. 
 
@@ -123,10 +121,10 @@ The estimated time to recover the server (recovery time objective, or RTO) depen
 
 During the geo-restore, the server configurations that can be changed include virtual network settings and the ability to remove geo-redundant backup from the restored server. Changing other server configurations--such as compute, storage, or pricing tier (Burstable, General Purpose, or Memory Optimized)--during geo-restore is not supported.
 
-For more information about performing a geo-restore, see the [how-to guide](how-to-restore-server-portal.md#perform-geo-restore).
 
-> [!IMPORTANT]
-> When the primary region is down, you can't create geo-redundant servers in the respective geo-paired region, because storage can't be provisioned in the primary region. Before you can provision geo-redundant servers in the geo-paired region, you must wait for the primary region to be up. 
+
+
+Please Note When the primary region is down, you can't create geo-redundant servers in the respective geo-paired region, because storage can't be provisioned in the primary region. Before you can provision geo-redundant servers in the geo-paired region, you must wait for the primary region to be up. 
 >
 > With the primary region down, you can still geo-restore the source server to the geo-paired region. Disable the geo-redundancy option in the **Compute + Storage** > **Configure Server** settings in the portal, and restore as a locally redundant server to help ensure business continuity.  
 
@@ -158,4 +156,3 @@ After you restore the database, you can perform the following tasks to get your 
 
 - Configure alerts as appropriate.
   
-- If you restored the database configured with high availability, and if you want to configure the restored server with high availability, you can then follow [the steps](./how-to-manage-high-availability-portal.md).

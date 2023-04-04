@@ -2,10 +2,9 @@
 
 # Read replicas in Azure Database for PostgreSQL - Flexible Server Preview
 
-[!INCLUDE [applies-to-postgresql-flexible-server](../includes/applies-to-postgresql-flexible-server.md)]
 
-> [!NOTE]
-> Read replicas for PostgreSQL Flexible Server is currently in preview.
+
+Please Note Read replicas for PostgreSQL Flexible Server is currently in preview.
 
 The read replica feature allows you to replicate data from an Azure Database for PostgreSQL server to a read-only replica. Replicas are updated **asynchronously** with the PostgreSQL engine native physical replication technology. Streaming replication by using replication slots is the default operation mode. When necessary, log shipping is used to catch up. You can replicate from the primary server to up to five replicas.
 
@@ -25,8 +24,7 @@ Because replicas are read-only, they don't directly reduce write-capacity burden
 
 The feature is meant for scenarios where the lag is acceptable and meant for offloading queries. It isn't meant for synchronous replication scenarios where the replica data is expected to be up-to-date. There will be a measurable delay between the primary and the replica. This can be in minutes or even hours depending on the workload and the latency between the primary and the replica. The data on the replica eventually becomes consistent with the data on the primary. Use this feature for workloads that can accommodate this delay.
 
-> [!NOTE]
-> For most workloads read replicas offer near-real-time updates from the primary. However, with persistent heavy write-intensive primary workloads, the replication lag could continue to grow and may never be able to catch-up with the primary. This may also increase storage usage at the primary as the WAL files are not deleted until they are received at the replica. If this situation persists, deleting and recreating the read replica after the write-intensive workloads completes is the option to bring the replica back to a good state with respect to lag.
+Please Note For most workloads read replicas offer near-real-time updates from the primary. However, with persistent heavy write-intensive primary workloads, the replication lag could continue to grow and may never be able to catch-up with the primary. This may also increase storage usage at the primary as the WAL files are not deleted until they are received at the replica. If this situation persists, deleting and recreating the read replica after the write-intensive workloads completes is the option to bring the replica back to a good state with respect to lag.
 > Asynchronous read replicas are not suitable for such heavy write workloads. When evaluating read replicas for your application, monitor the lag on the replica for a full app work load cycle through its peak and non-peak times to assess the possible lag and the expected RTO/RPO at various points of the workload cycle.
 
 ## Cross-region replication
@@ -81,15 +79,13 @@ Set an alert to inform you when the replica lag reaches a value that isn’t acc
 
 For additional insight, query the primary server directly to get the replication lag on all replicas.  
 
-> [!NOTE]
-> If a primary server or read replica restarts, the time it takes to restart and catch up is reflected in the Replica Lag metric.
+Please Note If a primary server or read replica restarts, the time it takes to restart and catch up is reflected in the Replica Lag metric.
 
 ## Promote replicas
 
 You can stop the replication between a primary and a replica by promoting one or more replicas at any time. The promote action causes the replica to apply all the pending logs and promotes the replica to be an independent, standalone read-writeable server. The data in the standalone server is the data that was available on the replica server at the time the replication is stopped. Any subsequent updates at the primary are not propagated to the replica. However, replica server may have accumulated logs that are not applied yet. As part of the promote process, the replica applies all the pending logs before accepting client connections.
 
->[!NOTE]
-> Resetting admin password on replica server is currently not supported. Additionally, updating admin password along with promote replica operation in the same request is also not supported. If you wish to do this you must first promote the replica server then update the password on the newly promoted server separately.
+Please Note  Resetting admin password on replica server is currently not supported. Additionally, updating admin password along with promote replica operation in the same request is also not supported. If you wish to do this you must first promote the replica server then update the password on the newly promoted server separately.
 
 ### Considerations
 
@@ -114,8 +110,6 @@ Since replication is asynchronous, there could be a considerable lag between the
 
 [//]: # (You can track the replication lag for each replica using the *Replica Lag* metric. This metric shows the time since the last replayed transaction at the replica. We recommend that you identify the average lag by observing the replica lag over a period of time. You can set an alert on replica lag, so that if it goes outside your expected range, you will be notified to take action.)
 
-> [!Tip]
-> If you failover to the replica, the lag at the time you delink the replica from the primary will indicate how much data is lost.
 
 Once you have decided you want to failover to a replica,
 
