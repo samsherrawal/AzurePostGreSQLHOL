@@ -88,7 +88,3 @@ Open your server's **Overview** page. Make a note of the **Server name** and the
 ## Next steps
 
 [Continue >](./ConnectPGUsingpsql.md)
-
-Connect Flexible Server.
-- [Connect Flexible Server Using psql](./ConnectPGUsingpsql.md)
-- [Connect Flexible Server Using PgAdmin](./ConnectPGSql.md)
