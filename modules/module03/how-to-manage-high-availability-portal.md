@@ -1,4 +1,5 @@
 
+[< Previous Module](../module03/concepts-read-replicas.md) - **[Home](../../README.md)** - [Next Module >](../module03/howto-configure-and-access-logs.md)
 
 # Manage high availability in Flexible Server
 
