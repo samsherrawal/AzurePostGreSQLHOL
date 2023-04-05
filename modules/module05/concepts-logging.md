@@ -48,6 +48,20 @@ The following table describes the fields for the **PostgreSQLLogs** type. Depend
 | _ResourceId | Resource URI |
 
 
-
+## Next Module Oracle to PostGreSQL migration
 [Next Module >](../module06/Ora2PG.md)
+
+
+## Optional Learning
+
+[concepts-server-parameters](./concepts-server-parameters.md)
+
+[how-to-manage-server-cli](./how-to-manage-server-cli.md)
+
+[howto-alert-on-metrics](./howto-alert-on-metrics.md)
+
+[howto-configure-server-parameters-using-cli](./howto-configure-server-parameters-using-cli.md)
+
+[howto-configure-server-parameters-using-portal](./howto-configure-server-parameters-using-portal.md)
+
 
