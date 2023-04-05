@@ -1,4 +1,4 @@
-[< Previous Module](./ConnectPGSql.md) - **[Home](../../README.md)** - [Next Module >](../modules/module02/how-to-migrate-using-dump-and-restore.md)
+[< Previous Module](./ConnectPGSql.md) - **[Home](../../README.md)** - [Next Module >](./ConnectPGSql.md)
 
 ## Connect to the PostgreSQL database using psql
 
