@@ -1,4 +1,5 @@
 
+[< Previous Module](../module03/concepts-high-availability.md) - **[Home](../../README.md)** - [Next Module >](../module03/how-to-manage-high-availability-portal.md)
 
 # Read replicas in Azure Database for PostgreSQL - Flexible Server Preview
 
