@@ -55,4 +55,6 @@ AzureDiagnostics
 
 The query above will show results over the last 6 hours for any Postgres server logging in this workspace.
 
+[< Previous Module](../module03/how-to-manage-high-availability-portal.md)
+
 
