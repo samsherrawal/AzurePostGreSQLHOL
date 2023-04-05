@@ -1,6 +1,6 @@
 [< Previous Module](../module03/concepts-backup-restore.md) - **[Home](../../README.md)** - [Next Module >](../module01/AzurePG.md)
 
-## Module06 - What is Ora2PG
+# Module 06 - What is Ora2PG
 
 Ora2Pg is a free tool used to migrate an Oracle database to a PostgreSQL compatible schema. It connects your Oracle database, scans it automatically and extracts its structure or data, then generates SQL scripts that you can load into your PostgreSQL database.
 
@@ -88,10 +88,8 @@ Simple table (only columns with numbers) : +1 millions rows / second
 -   Learn about [Ora2PG Installation on Linux](./Ora2PGInstallLinux.md)
 
 
-
-
-## Back to Module 1
-[First Module >](../module01/AzurePG.md)
+## Skip to Home
+**[Home](../../README.md)**
 
 
 
