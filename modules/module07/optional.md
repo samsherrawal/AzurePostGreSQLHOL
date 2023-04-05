@@ -2,23 +2,32 @@
 
 ## Module07 - Optional Learning
 
-[Business Continuity in Azure PostGreSQL](./concepts-business-continuity.md)
+[Business Continuity in Azure PostGreSQL](./module03/concepts-business-continuity.md)
 
 
-[High Availability Concepts in Azure PostGreSQL](./concepts-high-availability.md)
+[High Availability Concepts in Azure PostGreSQL](./module03/concepts-high-availability.md)
 
 
-[Read Replicas Concepts in AzurePostGreSQL](./concepts-read-replicas.md)
+[Read Replicas Concepts in AzurePostGreSQL](./module03/concepts-read-replicas.md)
 
 
-[Managing High Availability Concepts in AzurePostGreSQL](./how-to-manage-high-availability-portal.md)
+[Managing High Availability Concepts in AzurePostGreSQL](./module03/how-to-manage-high-availability-portal.md)
 
 
-[Configuring Access Logs Concepts in AzurePostGreSQL](./howto-configure-and-access-logs.md)
+[Configuring Access Logs Concepts in AzurePostGreSQL](./module03/howto-configure-and-access-logs.md)
+
+
+[Query Store in AzurePostGreSQL](../module04/concepts-query-store.md)
+
+
+[Query Store Best Practices in AzurePostGreSQL](../module04/concepts-query-store-best-practices.md)
 
 
 [Intelligent Tuning in AzurePostGreSQL](../module04/concepts-intelligent-tuning.md)
 
 
-## Back to Module 1
-[First Module >](../module01/AzurePG.md)
+[Connect Query Guide in AzurePostGreSQL](../module04/how-to-connect-query-guide.md.md)
+
+
+## Skip to Home
+**[Home](../../README.md)**
