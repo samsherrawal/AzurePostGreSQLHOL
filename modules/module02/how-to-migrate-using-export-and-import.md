@@ -1,3 +1,4 @@
+[< Previous Module](../modules/module02.md) - **[Home](../../README.md)** - [Next Module >](./ConnectPGSql.md)
 
 # Migrate your PostgreSQL database using export and import
 
