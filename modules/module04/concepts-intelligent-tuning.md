@@ -49,5 +49,5 @@ Intelligent tuning operates in both directions. It tries to lower durations duri
 
 [concepts-query-store](./concepts-query-store.md)
 
-[how-to-connect-query-guide](./how-to-connect-query-guide.md)
+[how-to-connect-query-guide](./how-to-connect-query-guide.md.md)
 
