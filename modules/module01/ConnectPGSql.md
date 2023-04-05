@@ -1,4 +1,5 @@
-[< Previous Module](./CreateAzurePostGresql.md) - **[Home](../../README.md)** - [Next Module >](./ConnectPGUsingpsql.md)
+[< Previous Module](./ConnectPGUsingpsql.md)) - **[Home](../../README.md)** - [Next Module >](../module02/how-to-migrate-using-dump-and-restore.md)
+
 
 In this excercise, we will show how to connect to instances of Azure Database for PostgreSQL servers using the pgAdmin tool installed locally on a user’s workstation.
 
