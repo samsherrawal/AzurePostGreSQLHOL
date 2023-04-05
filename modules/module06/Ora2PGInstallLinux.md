@@ -1,7 +1,7 @@
 [< Previous Module](../module03/concepts-backup-restore.md) - **[Home](../../README.md)** - [Next Module >](../module01/AzurePG.md)
 
 
-# Module06b - Ora2PG Installation on Linux
+# Module 06b - Ora2PG Installation on Linux
 This document will provide step by step guidance of Ora2PG installation on a standalone machine. In our case, we will call this machine as jumpbox where other migration related software’s can be installed along with Ora2PG.
 Before spinning this jumpbox up, we need to download below items to local machine as a prerequisite.
 
@@ -124,9 +124,12 @@ psql -h sirvalhyper-small-c.postgres.database.azure.com -d citus -U citus -f PAR
 Load data into PostgeSQL. It's most important that you first create a psql database and user for the import.
 Ora2pg -c /etc/ora2pg.conf -t INSERT -o /datadrive/table1_data.sql -b data/
 
+## Next steps
+[Continue >](../module07/optional.md)
 
-## Back to Module 1
-[First Module >](../module01/AzurePG.md)
+
+## Skip to Home
+**[Home](../../README.md)**
 
 
 
