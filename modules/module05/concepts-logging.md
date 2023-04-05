@@ -60,7 +60,7 @@ The following table describes the fields for the **PostgreSQLLogs** type. Depend
 
 [howto-alert-on-metrics](./howto-alert-on-metrics.md)
 
-[howto-configure-server-parameters-using-cli](./howto-configure-server-parameters-using-cli.md)
+[howto-configure-server-parameters-using-cli](./howto-configure-server-parameters-using-cli.md.md)
 
 [howto-configure-server-parameters-using-portal](./howto-configure-server-parameters-using-portal.md)
 
