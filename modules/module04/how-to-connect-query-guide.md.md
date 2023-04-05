@@ -29,6 +29,4 @@ PostgreSQL provides the ability to extend the functionality of your database usi
 - [pg_prewarm](./concepts-extensions.md#pg_prewarm)
 - [pg_stat_statements](./concepts-extensions.md#pg_stat_statements)
 
-Fore more details, see [How to use PostgreSQL extensions on Flexible server](concepts-extensions.md).
-
 [< Previous Module](../module04/concepts-intelligent-tuning.md)
