@@ -5,31 +5,31 @@ Ora2Pg is a free tool used to migrate an Oracle database to a PostgreSQL compati
 
 ## What Ora2PG can do
 
-● Automatic Oracle database discovery
-● Automatic creation of migration projects
-● Oracle database migration cost assessment
-● Automatic database schema export
-● Full and automatic data export
-● Automatic conversion of PL/SQL to PLPGSQL
-● Oracle Spatial to PostGis export
+* Automatic Oracle database discovery
+* Automatic creation of migration projects
+* Oracle database migration cost assessment
+* Automatic database schema export
+* Full and automatic data export
+* Automatic conversion of PL/SQL to PLPGSQL
+* Oracle Spatial to PostGis export
 
 
 
 ## Automatic Discovery
 
-● Set the Oracle connection DSN
-    – ora2pg -u system -w manager -t SHOW_VERSION --source
+* Set the Oracle connection DSN
+    - ora2pg -u system -w manager -t SHOW_VERSION --source
     « dbi:Oracle:host=localhost;sid=mydb »
-● Set the configuration file /etc/ora2pg/ora2pg.conf
-    – ORACLE_DSN dbi:Oracle:host=localhost;sid=mydb
-    – ORACLE_USER system
-    – ORACLE_PWD manager
-● Look for schema to export and set it into configuration file:
-    – ora2pg -c /etc/ora2pg/ora2pg.conf -t SHOW_SCHEMA
-    – SCHEMA HR
-● Lookup database tables and columns:
-    – ora2pg -c /etc/ora2pg/ora2pg.conf -t SHOW_TABLE
-    – ora2pg -c /etc/ora2pg/ora2pg.conf -t SHOW_COLUMN
+* Set the configuration file /etc/ora2pg/ora2pg.conf
+    - ORACLE_DSN dbi:Oracle:host=localhost;sid=mydb
+    - ORACLE_USER system
+    - ORACLE_PWD manager
+* Look for schema to export and set it into configuration file:
+    - ora2pg -c /etc/ora2pg/ora2pg.conf -t SHOW_SCHEMA
+    - SCHEMA HR
+* Lookup database tables and columns:
+    - ora2pg -c /etc/ora2pg/ora2pg.conf -t SHOW_TABLE
+    - ora2pg -c /etc/ora2pg/ora2pg.conf -t SHOW_COLUMN
 
 ## Create a Migration project
 
@@ -50,13 +50,13 @@ ora2pg --init_project my_db_mig --project_base /full/path/to/project
 
 ## Migration Assessment
 
-● What database might be migrated first ?
-    – Choose the smallest with few PL/SQL to learn Ora2Pg usage
-    – Then choose the most representative, you need to forge your experience
-● But how much human-days this work will cost me?
-    – Use Ora2Pg migration assessment report
-ora2pg -c /etc/ora2pg.conf -t SHOW_REPORT --estimate_cost
---dump_as_html > report.html
+* What database might be migrated first ?
+    - Choose the smallest with few PL/SQL to learn Ora2Pg usage
+    - Then choose the most representative, you need to forge your experience
+* But how much human-days this work will cost me?
+    - Use Ora2Pg migration assessment report
+    
+ora2pg -c /etc/ora2pg.conf -t SHOW_REPORT --estimate_cost --dump_as_html > report.html
 
 ## Sample assessment report
 
@@ -64,7 +64,7 @@ ora2pg -c /etc/ora2pg.conf -t SHOW_REPORT --estimate_cost
 
 ## Schema Migration
 
-● Almost everything is exported :
+* Almost everything is exported :
 – table, constraint, index, sequence, trigger, view, tablespace, grant, type, partition
 – procedure, function, package, synonym, database link, materialized view, ...
 ● but some are not exported and need adaptation :
@@ -82,14 +82,14 @@ reverse() function based index and search.
 
 ## Data Migration
 
-● Can you migrate Big data ?
-– Tera bytes of data and billions of rows in tables takes hours
-– Purge or archive unused or rarely used data
-– Import live data first, open to production then import remaining data
+* Can you migrate Big data ?
+ - Tera bytes of data and billions of rows in tables takes hours
+ - Purge or archive unused or rarely used data
+ - Import live data first, open to production then import remaining data
 
 Simple table (only columns with numbers) : +1 millions rows / second
-● Complex table (lot of CLOB and/or BLOB) : 100 rows / second
-● Always use COPY data export mode, INSERT is too slow
+* Complex table (lot of CLOB and/or BLOB) : 100 rows / second
+* Always use COPY data export mode, INSERT is too slow
 
 
 ## Next steps
