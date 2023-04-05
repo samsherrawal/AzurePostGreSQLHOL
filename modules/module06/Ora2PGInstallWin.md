@@ -1,6 +1,6 @@
 [< Previous Module](../module06/Ora2PG.md) - **[Home](../../README.md)** - [Next Module >](../module06/Ora2PGInstallLinux.md)
 
-## Module06a - Ora2PG Installation on Windows
+# Module 06a - Ora2PG Installation on Windows
 
 This document is meant to be used as a Quick Installation Guide for enabling
 migration of schema & data from Oracle to Azure Database for PostgreSQL using
@@ -158,6 +158,9 @@ Type ora2pg –version as following:
   
 ## Next Module
 [Continue >](../module06/Ora2PGInstallLinux.md)
+ 
+ ## Skip to Home
+**[Home](../../README.md)**
 
 
 
