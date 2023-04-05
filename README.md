@@ -47,6 +47,7 @@ As you’re considering cloud-hosted database offerings, important qualities to 
 4. [Azure Database for PostgreSQL Security](./modules/module02a/secureAzurePG.md)
 5. [Backup and Restore in Azure PostgreSQL](./modules/module03/concepts-backup-restore.md)
 6. [Ora2PG Tool for Oracle to PostGreSQL Migration](./modules/module06/Ora2PG.md)
+7. [Optional Learning](./modules/module07/optional.md)
 
 
 <div align="right"><a href="#microsoft-AzurePostGreSQL-workshop">↥ back to top</a></div>
