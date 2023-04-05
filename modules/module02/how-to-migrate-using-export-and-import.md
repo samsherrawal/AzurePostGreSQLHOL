@@ -45,5 +45,5 @@ psql --file=testdb.sql --host=mydemoserver.database.windows.net --port=5432 --us
 
 
 ## Next steps
-[Migrate your PostgreSQL database using dump and restore](./how-to-migrate-using-dump-and-restore.md).
+[Backup and restore](modules/module03/concepts-backup-restore.md).
 
