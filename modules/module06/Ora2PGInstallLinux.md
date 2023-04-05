@@ -1,11 +1,12 @@
 
-
+# Introduction
 This document will provide step by step guidance of Ora2PG installation on a standalone machine. In our case, we will call this machine as jumpbox where other migration related software’s can be installed along with Ora2PG.
 Before spinning this jumpbox up, we need to download below items to local machine as a prerequisite.
-• Installora2pg.sh
-• instantclient-basic-linux.x64-19.3.0.0.0dbru.zip (latest file)
-• instantclient-sdk-linux.x64-19.3.0.0.0dbru.zip (latest file)
-• MobaXterm
+
+* [Installora2pg.sh](./script/installora2pg.sh)
+* instantclient-basic-linux.x64-19.3.0.0.0dbru.zip [latest file](https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html)
+* instantclient-sdk-linux.x64-19.3.0.0.0dbru.zip [latest file](https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html)
+* [MobaXterm](https://mobaxterm.mobatek.net/download.html)
 
 
 Next create a VM preferably in the same vnet where the Oracle DB is resided. Below please find a screenshot of Linux VM creation example.
@@ -120,6 +121,9 @@ Load into PostgreSQL.
 psql -h sirvalhyper-small-c.postgres.database.azure.com -d citus -U citus -f PARAMETERVALUES_output.sql
 Load data into PostgeSQL. It's most important that you first create a psql database and user for the import.
 Ora2pg -c /etc/ora2pg.conf -t INSERT -o /datadrive/table1_data.sql -b data/
+
+
+  -   Learn about [Ora2PG Installation on Windows](./Ora2PGInstallWin.md)
 
 
 
