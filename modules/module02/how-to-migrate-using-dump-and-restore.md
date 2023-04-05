@@ -12,26 +12,11 @@ To step through this how-to guide, you need:
 - An [Azure Database for PostgreSQL server](../single-server/quickstart-create-server-database-portal.md), including firewall rules to allow access.
 - [pg_dump](https://www.postgresql.org/docs/current/static/app-pgdump.html) and [pg_restore](https://www.postgresql.org/docs/current/static/app-pgrestore.html) command-line utilities installed.
 
-## Create a dump file that contains the data to be loaded
-
-To back up an existing PostgreSQL database on-premises or in a VM, run the following command:
-
-```bash
-pg_dump -Fc -v --host=<host> --username=<name> --dbname=<database name> -f <database>.dump
-```
-For example, if you have a local server and a database called **testdb** in it, run:
-
-```bash
-pg_dump -Fc -v --host=localhost --username=masterlogin --dbname=testdb -f testdb.dump
-```
-
 ## Restore the data into the target database
 
-Download the PostgreSQL DVD Rental sample database from dbdump folder. The database file is in zip format (dvdrental.zip) and you need to extract it to dvdrental.tar before restoring it inot the PostgreSQL database intance.
+Download the PostgreSQL DVD Rental sample database from [here](../module02/dbdump/dvdrental.sql) and save it to your local machine.
 
 ## Restore the DVD Rental database using the psql
-
-Download the dvdrental database backup from [here](../module02/dbdump/dvdrental.sql) and save it to your local machine.
 
 First launch the psql tool.
 
@@ -43,7 +28,7 @@ CREATE DATABASE dvdrental;
 After you've created the target database, you can use the `pg_restore` command and the  `--dbname` parameter to restore the data into the target database from the dump file.
 
 ```bash
-pg_restore -v --no-owner --host=<server name> --port=<port> --username=<user-name> --dbname=<target database name> C:\sampledb\dvdrental.tar
+pg_restore -v --no-owner --host=<server name> --port=<port> --username=<user-name> --dbname=<target database name> C:\sampledb\dvdrental.sql
 ```
 
 Including the `--no-owner` parameter causes all objects created during the restore to be owned by the user specified with `--username`. For more information, see the [PostgreSQL documentation](https://www.postgresql.org/docs/9.6/static/app-pgrestore.html).
@@ -52,7 +37,7 @@ Including the `--no-owner` parameter causes all objects created during the resto
 > On Azure Database for PostgreSQL servers, TLS/SSL connections are on by default. If your PostgreSQL server requires TLS/SSL connections, but doesn't have them, set an environment variable `PGSSLMODE=require` so that the pg_restore tool connects with TLS. Without TLS, the error might read: "FATAL: SSL connection is required. Please specify SSL options and retry." In the Windows command line, run the command `SET PGSSLMODE=require` before running the `pg_restore` command. In Linux or Bash, run the command `export PGSSLMODE=require` before running the `pg_restore` command. 
 >
 
-In this example, restore the data from the dump file **dvdrental.tar** into the database **dvdrental**, on target server **mydemoserver.postgres.database.azure.com**.
+In this example, restore the data from the dump file **dvdrental.sql** into the database **dvdrental**, on target server **mydemoserver.postgres.database.azure.com**.
 
 
 Here's an example for how to use this `pg_restore` for Flexible Server:
