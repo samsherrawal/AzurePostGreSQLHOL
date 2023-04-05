@@ -142,5 +142,5 @@ Remember to test and validate these commands in a test environment before you us
 
 ## Next steps
 
-- To migrate a PostgreSQL database by using export and import, see [Migrate your PostgreSQL database using export and import](./how-to-migrate-using-export-and-import.md).
+[Migrate your PostgreSQL database using export and import](./how-to-migrate-using-export-and-import.md).
 
