@@ -158,4 +158,4 @@ After you restore the database, you can perform the following tasks to get your 
 - Configure alerts as appropriate.
   
 ## Next steps
-[PostGreSQL Security] modules/module02a/secureAzurePG.md
+[PostGreSQL Security] (../module02a/secureAzurePG.md)
