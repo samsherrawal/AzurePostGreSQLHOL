@@ -1,4 +1,4 @@
-
+[< Previous Module](../module04/concepts-query-store.md) - **[Home](../../README.md)** - [Next Module >](../module04/concepts-intelligent-tuning.md)
 
 # Best practices for Query Store - Flexible Server
 
