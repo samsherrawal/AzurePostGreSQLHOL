@@ -45,5 +45,5 @@ psql --file=testdb.sql --host=mydemoserver.database.windows.net --port=5432 --us
 
 
 ## Next steps
-[Backup and restore](./modules/module03/concepts-backup-restore.md).
+[Backup and restore](../module03/concepts-backup-restore.md).
 
