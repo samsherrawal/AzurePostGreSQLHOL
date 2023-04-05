@@ -78,7 +78,4 @@ Below are some unplanned failure scenarios and the recovery process.
 
 Please Note Deleted servers **cannot** be restored. If you delete the server, all databases that belong to the server are also deleted and cannot be recovered. Use Azure resource lock to help prevent accidental deletion of your server.
 
-## Next steps
-
--   Learn about [high availability deployment models](./concepts-high-availability.md)
--   Learn about [backup and recovery](./concepts-backup-restore.md)
+[< Previous Module](./optional.md)
