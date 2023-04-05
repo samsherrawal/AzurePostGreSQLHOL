@@ -1,3 +1,5 @@
+[< Previous Module](../module03/howto-configure-and-access-logs.md) - **[Home](../../README.md)** - [Next Module >](../module04/concepts-query-store-best-practices.md)
+
 
 # Monitor Performance with Query Store
 
