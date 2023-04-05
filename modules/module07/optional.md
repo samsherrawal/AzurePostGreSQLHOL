@@ -2,10 +2,10 @@
 
 ## Module07 - Optional Learning
 
-[Business Continuity in Azure PostGreSQL](./module03/concepts-business-continuity.md)
+[Business Continuity in Azure PostGreSQL](../module03/concepts-business-continuity.md)
 
 
-[High Availability Concepts in Azure PostGreSQL](./module03/concepts-high-availability.md)
+[High Availability Concepts in Azure PostGreSQL](../module03/concepts-high-availability.md)
 
 
 [Read Replicas Concepts in AzurePostGreSQL](./module03/concepts-read-replicas.md)
