@@ -151,6 +151,5 @@ This view returns the query plan that was used to execute a query. There is one 
 
 ## Limitations and known issues
 - If a PostgreSQL server has the parameter default_transaction_read_only on, Query Store will not capture any data.
-## Next steps
-- Learn more about [scenarios where Query Store can be especially helpful](concepts-query-store-scenarios.md).
-- Learn more about [best practices for using Query Store](concepts-query-store-best-practices.md).
+
+[< Previous Module](../module03/howto-configure-and-access-logs.md)
