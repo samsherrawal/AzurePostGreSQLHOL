@@ -1,8 +1,6 @@
-
+[< Previous Module](../module04/concepts-intelligent-tuning.md) - **[Home](../../README.md)** - [Next Module >](../module06/Ora2PG.md)
 
 # Logs in Azure Database for PostgreSQL - Flexible Server
-
-
 
 Azure Database for PostgreSQL allows you to configure and access Postgres' standard logs. The logs can be used to identify, troubleshoot, and repair configuration errors and suboptimal performance. Logging information you can configure and access includes errors, query information, autovacuum records, connections, and checkpoints. (Access to transaction logs is not available).
 
@@ -50,4 +48,6 @@ The following table describes the fields for the **PostgreSQLLogs** type. Depend
 | _ResourceId | Resource URI |
 
 
+
+# Next Module [Next Module >](../module06/Ora2PG.md)
 
