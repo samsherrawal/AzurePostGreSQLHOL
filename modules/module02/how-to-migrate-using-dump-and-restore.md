@@ -1,4 +1,4 @@
-[< Previous Module](../modules/module01/ConnectPGSql.md) - **[Home](../../README.md)** - [Next Module >](./how-to-migrate-using-export-and-import.md)
+[< Previous Module](../module01/CreateAzurePostGresql.md) - **[Home](../../README.md)** - [Next Module >](./how-to-migrate-using-export-and-import.md)
 
 
 # Migrate your PostgreSQL database by using dump and restore
