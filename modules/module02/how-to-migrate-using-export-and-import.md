@@ -49,5 +49,5 @@ psql --file=testdb.sql --host=mydemoserver.database.windows.net --port=5432 --us
 [Securing Azure PostGreSQL](../module02a/secureAzurePG.md)
 
 ## Skip to Module 3
-(../module03/concepts-backup-restore.md)
+[Understanding Backup & Restore in Azure PostGreSQL](../module03/concepts-backup-restore.md)
 
