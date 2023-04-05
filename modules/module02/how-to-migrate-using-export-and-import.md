@@ -1,4 +1,4 @@
-[< Previous Module](../modules/module02.md) - **[Home](../../README.md)** - [Next Module >](./ConnectPGSql.md)
+[< Previous Module](./how-to-migrate-using-dump-and-restore.md) - **[Home](../../README.md)** - [Next Module >](../module03/concepts-backup-restore.md)
 
 # Migrate your PostgreSQL database using export and import
 
