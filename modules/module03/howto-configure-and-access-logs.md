@@ -1,3 +1,4 @@
+[< Previous Module](../module03/how-to-manage-high-availability-portal.md) - **[Home](../../README.md)** - [Next Module >](../module04/concepts-query-store.md)
 
 
 # Configure and Access Logs in Azure Database for PostgreSQL - Flexible Server
