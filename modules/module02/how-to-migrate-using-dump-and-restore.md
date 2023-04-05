@@ -1,7 +1,7 @@
 [< Previous Module](../module01/CreateAzurePostGresql.md) - **[Home](../../README.md)** - [Next Module >](./how-to-migrate-using-export-and-import.md)
 
 
-# Migrate your PostgreSQL database by using dump and restore
+# Module04 - Migrate your PostgreSQL database by using dump and restore
 
 
 You can use [pg_dump](https://www.postgresql.org/docs/current/static/app-pgdump.html) to extract a PostgreSQL database into a dump file. Then use [pg_restore](https://www.postgresql.org/docs/current/static/app-pgrestore.html) to restore the PostgreSQL database from an archive file created by `pg_dump`.
@@ -143,6 +143,6 @@ pg_dump -h my-source-server-name -U source-server-username -Fc -d source-databas
 Remember to test and validate these commands in a test environment before you use them in production.
 
 ## Next steps
+[Continue >](../module02/how-to-migrate-using-export-and-import.md)
 
-[Migrate your PostgreSQL database using export and import](./how-to-migrate-using-export-and-import.md).
 
