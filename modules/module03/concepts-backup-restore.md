@@ -159,3 +159,23 @@ After you restore the database, you can perform the following tasks to get your 
   
 ## Next Module
 [PostGreSQL Intelligent Tuning](../module04/concepts-intelligent-tuning.md)
+
+
+## Optional Learning
+
+[Business Continuity in Azure PostGreSQL](./concepts-business-continuity.md)
+
+
+[High Availability Concepts in Azure PostGreSQL](./concepts-high-availability.md)
+
+
+[Read Replicas Concepts in AzurePostGreSQL](./concepts-read-replicas.md)
+
+
+[Managing High Availability Concepts in AzurePostGreSQL](./how-to-manage-high-availability-portal.md)
+
+
+[Configuring Access Logs Concepts in AzurePostGreSQL](./howto-configure-and-access-logs.md)
+
+
+
