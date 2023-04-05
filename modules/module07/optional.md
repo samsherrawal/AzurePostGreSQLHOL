@@ -1,4 +1,4 @@
-[< Previous Module](../module02a/secureAzurePG.md) - **[Home](../../README.md)** - [Next Module >](../module01/AzurePG.md)
+[< Previous Module](../module06/Ora2PG.md) - **[Home](../../README.md)** - [Next Module >](../module01/AzurePG.md)
 
 ## Module07 - Optional Learning
 
