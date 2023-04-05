@@ -151,6 +151,9 @@ ora2pg is set.
 Type ora2pg –version as following:
 
 ![Step-by-Step guide to install ora2pg on Windows16](./image/Step-by-Stepguidetoinstallora2pgonWindows16.jpg)
+  
+
+-   Learn about [Ora2PG Installation on Linux](./Ora2PGInstallLinux.md)
 
 
 
