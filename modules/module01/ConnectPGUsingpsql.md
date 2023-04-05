@@ -1,6 +1,6 @@
-[< Previous Module](./ConnectPGSql.md) - **[Home](../../README.md)** - [Next Module >](./ConnectPGSql.md)
+[< Previous Module](./module01/CreateAzurePostGresql.md) - **[Home](../../README.md)** - [Next Module >](./ConnectPGSql.md)
 
-## Module02 - Connect to the PostgreSQL database using psql
+# Module 02 - Connect to the PostgreSQL database using psql
 
 There are a number of applications you can use to connect to your Azure Database for PostgreSQL server. If your client computer has PostgreSQL installed, you can use a local instance of [psql](https://www.postgresql.org/docs/current/static/app-psql.html) to connect to an Azure PostgreSQL server. Let's now use the psql command-line utility to connect to the Azure PostgreSQL server.
 
