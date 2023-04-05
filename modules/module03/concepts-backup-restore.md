@@ -1,5 +1,5 @@
 
-[< Previous Module](../modules/module02.md) - **[Home](../../README.md)** - [Next Module >](./ConnectPGSql.md)
+[< Previous Module](../module02a/secureAzurePG.md) - **[Home](../../README.md)** - [Next Module >](../module04/concepts-intelligent-tuning.md)
 
 # Backup and restore in Azure Database for PostgreSQL - Flexible Server
 
