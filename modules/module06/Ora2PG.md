@@ -33,20 +33,9 @@ Ora2Pg is a free tool used to migrate an Oracle database to a PostgreSQL compati
 
 ## Create a Migration project
 
-ora2pg --init_project my_db_mig --project_base /full/path/to/project
-/full/path/to/project/my_db_mig/
-├── config/
-│ └── ora2pg.conf
-├── data/
-├── export_schema.sh
-├── reports/
-├── schema/
-│ ├── dblinks/ functions/ grants/ mviews/ packages/
-│ ├── partitions/ procedures/ sequences/ synonyms/
-│ └── tables/ tablespaces/ directories/ triggers/ types/ views/
-└── sources/
-├── functions/ mviews/ packages/ partitions/
-└── procedures/ triggers/ types/ views/
+ora2pg --project_base /app/migration/ --init_project test_project
+
+![ora2pg_project](./image/ora2pg-project.png)
 
 ## Migration Assessment
 
@@ -65,19 +54,17 @@ ora2pg -c /etc/ora2pg.conf -t SHOW_REPORT --estimate_cost --dump_as_html > repor
 ## Schema Migration
 
 * Almost everything is exported :
-– table, constraint, index, sequence, trigger, view, tablespace, grant, type, partition
-– procedure, function, package, synonym, database link, materialized view, ...
-● but some are not exported and need adaptation :
-– IOT / Cluster indexes can be replaced by « CLUSTER table_name USING
-index_name ».
-– Bitmap indexes are internally build by PostgreSQL when needed.
-– Reverse indexes can be replaced by a trigram-based index (see pg_trgm) or a
-reverse() function based index and search.
-– Type inheritance and type with member method are not supported
-– Global indexes over partitions are not supported
-– Global Temporary Table does not exists
-– Virtual Columns does not exists, use view instead
-– Compound triggers are not supported
+ - table, constraint, index, sequence, trigger, view, tablespace, grant, type, partition
+ - procedure, function, package, synonym, database link, materialized view, ...
+* Some are not exported and need adaptation :
+ - IOT / Cluster indexes can be replaced by « CLUSTER table_name USING index_name ».
+ - Bitmap indexes are internally build by PostgreSQL when needed.
+ - Reverse indexes can be replaced by a trigram-based index (see pg_trgm) or a reverse() function based index and search.
+ - Type inheritance and type with member method are not supported
+ - Global indexes over partitions are not supported
+ - Global Temporary Table does not exists
+ - Virtual Columns does not exists, use view instead
+ - Compound triggers are not supported
 
 
 ## Data Migration
