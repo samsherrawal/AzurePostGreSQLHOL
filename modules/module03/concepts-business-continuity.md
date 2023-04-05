@@ -1,4 +1,4 @@
-
+[< Previous Module](../module06/Ora2PG.md) - **[Home](../../README.md)** - [Next Module >](../module03/concepts-high-availability.md)
 
 # Overview of business continuity with Azure Database for PostgreSQL - Flexible Server
 
