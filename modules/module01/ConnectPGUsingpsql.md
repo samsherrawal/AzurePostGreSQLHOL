@@ -1,4 +1,4 @@
-[< Previous Module](./module01/CreateAzurePostGresql.md) - **[Home](../../README.md)** - [Next Module >](./ConnectPGSql.md)
+[< Previous Module](../module01/CreateAzurePostGresql.md) - **[Home](../../README.md)** - [Next Module >](./ConnectPGSql.md)
 
 # Module 02a - Connecting to Azure Database for PostgreSQL using psql
 
