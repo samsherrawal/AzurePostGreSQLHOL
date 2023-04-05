@@ -37,7 +37,5 @@ Automatic backups are performed periodically from the primary database server, w
 
 ![concepts-same-zone-high-availability-architecture](./image/concepts-same-zone-high-availability-architecture.png)
 
-## Next steps
-
--   Learn about [backup and recovery](./concepts-backup-restore.md)
+[< Previous Module](../module03/concepts-business-continuity.md)
 
