@@ -1,3 +1,5 @@
+[< Previous Module](../modules/module02.md) - **[Home](../../README.md)** - [Next Module >](./ConnectPGSql.md)
+
 In this excercise, we will show how to connect to instances of Azure Database for PostgreSQL servers using the pgAdmin tool installed locally on a user’s workstation.
 
 # Introduction
