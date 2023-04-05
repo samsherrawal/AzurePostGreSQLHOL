@@ -11,11 +11,11 @@ http://ora2pg.darold.net/documentation.html
 
 
 The following software must be installed in the Windows machine prior to installing ora2pg:
- Perl 5.10 or more
- Oracle Instant Client or Full Oracle installation
- [optional] Visual C++ or Visual Studio Express
- DBD::Oracle Perl Module
- ora2pg
+* Perl 5.10 or more
+* Oracle Instant Client or Full Oracle installation
+* [optional] Visual C++ or Visual Studio Express
+* DBD::Oracle Perl Module
+* ora2pg
 
 
 It is recommended that you use the order above to proceed with the installation.
