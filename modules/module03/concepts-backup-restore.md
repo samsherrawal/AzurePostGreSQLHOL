@@ -157,5 +157,5 @@ After you restore the database, you can perform the following tasks to get your 
 
 - Configure alerts as appropriate.
   
-## Next steps
-[PostGreSQL Security](../module02a/secureAzurePG.md)
+## Next Module
+[PostGreSQL Intelligent Tuning](../module04/concepts-intelligent-tuning.md)
