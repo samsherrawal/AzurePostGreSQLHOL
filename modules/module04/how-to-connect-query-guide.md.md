@@ -1,4 +1,4 @@
-[< Previous Module](../module04/concepts-intelligent-tuning.md) - **[Home](../../README.md)** [Next Module >](../module05/concepts-logging.md)
+[< Previous Module](../module04/concepts-intelligent-tuning.md) - **[Home](../../README.md)** - [Next Module >](../module05/concepts-logging.md)
 
 
 # Connect and query overview for Azure database for PostgreSQL- Flexible Server
@@ -29,4 +29,4 @@ PostgreSQL provides the ability to extend the functionality of your database usi
 - [pg_prewarm](./concepts-extensions.md#pg_prewarm)
 - [pg_stat_statements](./concepts-extensions.md#pg_stat_statements)
 
-[< Previous Module](../module04/concepts-intelligent-tuning.md)- **[Home](../../README.md)** [Next Module >](../module05/concepts-logging.md)
+[< Previous Module](../module04/concepts-intelligent-tuning.md)- **[Home](../../README.md)** - [Next Module >](../module05/concepts-logging.md)
