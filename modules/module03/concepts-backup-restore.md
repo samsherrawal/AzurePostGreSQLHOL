@@ -1,7 +1,7 @@
 
 [< Previous Module](../module02a/secureAzurePG.md) - **[Home](../../README.md)** - [Next Module >](../module04/concepts-intelligent-tuning.md)
 
-# Module05 - Backup and restore in Azure Database for PostgreSQL - Flexible Server
+# Module 05 - Backup and restore in Azure Database for PostgreSQL - Flexible Server
 
 Backups form an essential part of any business continuity strategy. They help protect data from accidental corruption or deletion. 
 
@@ -158,6 +158,9 @@ After you restore the database, you can perform the following tasks to get your 
 ## Next Module
 [Continue >](../module06/Ora2PG.md)
 
+
+## Skip to Home
+**[Home](../../README.md)**
 
 
 
