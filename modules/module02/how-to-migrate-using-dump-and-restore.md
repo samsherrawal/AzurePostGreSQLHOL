@@ -31,6 +31,8 @@ Download the PostgreSQL DVD Rental sample database from dbdump folder. The datab
 
 ## Restore the DVD Rental database using the psql
 
+Download the dvdrental database backup from [here](../module02/dbdump/dvdrental.sql) and save it to your local machine.
+
 First launch the psql tool.
 
 Execute the following CREATE DATABASE statement to create a new database called dvdrental.
