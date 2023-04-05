@@ -8,13 +8,13 @@
 [High Availability Concepts in Azure PostGreSQL](../module03/concepts-high-availability.md)
 
 
-[Read Replicas Concepts in AzurePostGreSQL](./module03/concepts-read-replicas.md)
+[Read Replicas Concepts in AzurePostGreSQL](../module03/concepts-read-replicas.md)
 
 
-[Managing High Availability Concepts in AzurePostGreSQL](./module03/how-to-manage-high-availability-portal.md)
+[Managing High Availability Concepts in AzurePostGreSQL](../module03/how-to-manage-high-availability-portal.md)
 
 
-[Configuring Access Logs Concepts in AzurePostGreSQL](./module03/howto-configure-and-access-logs.md)
+[Configuring Access Logs Concepts in AzurePostGreSQL](../module03/howto-configure-and-access-logs.md)
 
 
 [Query Store in AzurePostGreSQL](../module04/concepts-query-store.md)
