@@ -41,13 +41,12 @@ As you’re considering cloud-hosted database offerings, important qualities to 
 
 ## :books: Learning Modules
 
-1. [Create an Azure Database for PostgreSQL](./modules/module01/CreateAzurePostGresql.md)
+1. [Create an Azure PostgreSQL Database](./modules/module01/CreateAzurePostGresql.md)
 2. [Connecting to PostgreSQL database](./modules/module01/ConnectPGUsingpsql.md)
 3. [Migrate your PostgreSQL database](./modules/module02/how-to-migrate-using-dump-and-restore.md)
-4. [Backup and restore in Azure Database for PostgreSQL](./modules/module03/concepts-backup-restore.md)
-5. [Azure Database for PostgreSQL Security](./modules/module02a/secureAzurePG.md)
-6. [Writing Queries](./modules/module04.md)
-7. [Ora2PG Migration Tool](./modules/module06/Ora2PG.md)
+4. [Azure Database for PostgreSQL Security](./modules/module02a/secureAzurePG.md)
+5. [Backup and Restore in Azure PostgreSQL](./modules/module03/concepts-backup-restore.md)
+6. [Ora2PG Tool for Oracle to PostGreSQL Migration](./modules/module06/Ora2PG.md)
 
 
 <div align="right"><a href="#microsoft-AzurePostGreSQL-workshop">↥ back to top</a></div>
