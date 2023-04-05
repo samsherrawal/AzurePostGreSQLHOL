@@ -1,4 +1,4 @@
-[< Previous Module](./how-to-migrate-using-dump-and-restore.md) - **[Home](../../README.md)** - [Next Module >](../module03/concepts-backup-restore.md)
+[< Previous Module](./how-to-migrate-using-dump-and-restore.md) - **[Home](../../README.md)** - [Next Module >](../module02a/secureAzurePG.md)
 
 # Migrate your PostgreSQL database using export and import
 
@@ -46,5 +46,8 @@ psql --file=testdb.sql --host=mydemoserver.database.windows.net --port=5432 --us
 
 
 ## Next steps
-[Backup and restore](../module03/concepts-backup-restore.md).
+[Securing Azure PostGreSQL](../module02a/secureAzurePG.md)
+
+## Skip to Module 3
+(../module03/concepts-backup-restore.md)
 
