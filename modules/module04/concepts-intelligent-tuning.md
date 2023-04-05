@@ -42,3 +42,16 @@ Intelligent tuning operates in both directions. It tries to lower durations duri
 ## Next Module
 [Next Module >](../module05/concepts-logging.md)
 
+
+## Optional Learning
+
+[concepts-server-parameters](./concepts-server-parameters.md)
+
+[how-to-manage-server-cli](./how-to-manage-server-cli.md)
+
+[howto-alert-on-metrics](./howto-alert-on-metrics.md)
+
+[howto-configure-server-parameters-using-cli](./howto-configure-server-parameters-using-cli.md)
+
+[howto-configure-server-parameters-using-portal](./howto-configure-server-parameters-using-portal.md)
+
