@@ -1,6 +1,6 @@
 [< Previous Module](./how-to-migrate-using-dump-and-restore.md) - **[Home](../../README.md)** - [Next Module >](../module02a/secureAzurePG.md)
 
-# Module05 - Migrate your PostgreSQL database using export and import
+# Module 05 - Migrate your PostgreSQL database using export and import
 
 You can use [pg_dump](https://www.postgresql.org/docs/current/static/app-pgdump.html) to extract a PostgreSQL database into a script file and [psql](https://www.postgresql.org/docs/current/static/app-psql.html) to import the data into the target database from that file.
 
@@ -47,6 +47,6 @@ psql --file=testdb.sql --host=mydemoserver.database.windows.net --port=5432 --us
 [Continue >](../module02a/secureAzurePG.md)
 
 
-## Skip to Module 4
-[Understanding Backup & Restore in Azure PostGreSQL](../module03/concepts-backup-restore.md)
+## Skip to Home
+**[Home](../../README.md)**
 
