@@ -1,4 +1,6 @@
 
+[< Previous Module](../module03/concepts-backup-restore.md) - **[Home](../../README.md)** - [Next Module >](../module05/concepts-logging.md)
+
 
 # Perform intelligent tuning in Azure Database for PostgreSQL - Flexible Server
 
@@ -36,3 +38,7 @@ Intelligent tuning operates in both directions. It tries to lower durations duri
 * Intelligent tuning makes optimizations only in specific ranges. It's possible that the feature won't make any changes.
 * Deleted databases in the query can cause slight delays in the feature's execution of improvements.
 * At this time, the feature makes optimizations only in the storage sections.
+
+## Next Module
+[Next Module >](../module05/concepts-logging.md)
+
