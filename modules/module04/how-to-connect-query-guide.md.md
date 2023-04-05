@@ -1,3 +1,5 @@
+[< Previous Module](../module04/concepts-intelligent-tuning.md) - **[Home](../../README.md)** 
+
 
 # Connect and query overview for Azure database for PostgreSQL- Flexible Server
 
@@ -29,7 +31,4 @@ PostgreSQL provides the ability to extend the functionality of your database usi
 
 Fore more details, see [How to use PostgreSQL extensions on Flexible server](concepts-extensions.md).
 
-## Next steps
-
-- [Migrate data using dump and restore](../howto-migrate-using-dump-and-restore.md)
-- [Migrate data using import and export](../howto-migrate-using-export-and-import.md)
+[< Previous Module](../module04/concepts-intelligent-tuning.md)
