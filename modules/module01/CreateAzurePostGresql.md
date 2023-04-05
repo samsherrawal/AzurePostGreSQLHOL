@@ -1,4 +1,4 @@
-[< Previous Module](../../README.md) - **[Home](../../README.md)** - [Next Module >](../modules/module02.md)
+[< Previous Module](../../README.md) - **[Home](../../README.md)** - [Next Module >](./ConnectPGUsingpsql.md)
 
 # Module 01 - Create an Azure Database for PostgreSQL - Flexible Server in the Azure portal
 
