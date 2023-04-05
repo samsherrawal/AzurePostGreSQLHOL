@@ -56,6 +56,7 @@ By default, the database to which pgAdmin connects is the Postgres database. The
 
 ![pgadmin-connection-properties-pgadmin](./image/pgadmin-connection-properties-for-azure-database-f.png)
 
+## Next steps
 
 [Migrate your PostgreSQL database](../module02/how-to-migrate-using-dump-and-restore.md)
 
