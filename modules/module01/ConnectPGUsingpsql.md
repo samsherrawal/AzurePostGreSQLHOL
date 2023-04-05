@@ -58,4 +58,6 @@ You connected to the Azure Database for PostgreSQL server via psql, and you crea
 
 We will connect to an instance of Azure Database for PostgreSQL using pgAdmin
 
+## Next steps
+
 [Connect Flexible Server Using PgAdmin](./ConnectPGSql.md)
