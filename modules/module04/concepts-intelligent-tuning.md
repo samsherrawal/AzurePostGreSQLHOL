@@ -1,5 +1,5 @@
 
-[< Previous Module](../module03/concepts-backup-restore.md) - **[Home](../../README.md)** - [Next Module >](../module05/concepts-logging.md)
+[< Previous Module](../module04/concepts-query-store-best-practices.md) - **[Home](../../README.md)** - [Next Module >](../module04/how-to-connect-query-guide.md.md)
 
 
 # Perform intelligent tuning in Azure Database for PostgreSQL - Flexible Server
@@ -39,15 +39,5 @@ Intelligent tuning operates in both directions. It tries to lower durations duri
 * Deleted databases in the query can cause slight delays in the feature's execution of improvements.
 * At this time, the feature makes optimizations only in the storage sections.
 
-## Next Module - Understanding Logging in Azure PostGreSQL! 
-[Next Module >](../module05/concepts-logging.md)
-
-
-## Optional Learning
-
-[concepts-query-store-best-practices](./concepts-query-store-best-practices.md)
-
-[concepts-query-store](./concepts-query-store.md)
-
-[how-to-connect-query-guide](./how-to-connect-query-guide.md.md)
+[< Previous Module](../module04/concepts-query-store-best-practices.md)
 
