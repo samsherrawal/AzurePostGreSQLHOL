@@ -39,19 +39,15 @@ Intelligent tuning operates in both directions. It tries to lower durations duri
 * Deleted databases in the query can cause slight delays in the feature's execution of improvements.
 * At this time, the feature makes optimizations only in the storage sections.
 
-## Next Module
+## Next Module - Understanding Logging in Azure PostGreSQL! 
 [Next Module >](../module05/concepts-logging.md)
 
 
 ## Optional Learning
 
-[concepts-server-parameters](./concepts-server-parameters.md)
+[concepts-query-store-best-practices](./concepts-query-store-best-practices.md)
 
-[how-to-manage-server-cli](./how-to-manage-server-cli.md)
+[concepts-query-store](./concepts-query-store.md)
 
-[howto-alert-on-metrics](./howto-alert-on-metrics.md)
-
-[howto-configure-server-parameters-using-cli](./howto-configure-server-parameters-using-cli.md)
-
-[howto-configure-server-parameters-using-portal](./howto-configure-server-parameters-using-portal.md)
+[how-to-connect-query-guide](./how-to-connect-query-guide.md)
 
