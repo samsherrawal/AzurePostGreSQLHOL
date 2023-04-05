@@ -150,7 +150,4 @@ There are Azure regions that do not support availability zones. If you have alre
 7. Make sure your clients connection strings are modified to point to your new HA-enabled server.
    
 
-## Next steps
-
--   Learn about [business continuity](./concepts-business-continuity.md)
--   Learn about [zone redundant high availability](./concepts-high-availability.md)
+[< Previous Module](../module03/concepts-read-replicas.md)
