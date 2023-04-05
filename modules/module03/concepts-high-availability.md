@@ -1,4 +1,4 @@
-
+[< Previous Module](../module03/concepts-business-continuity.md) - **[Home](../../README.md)** - [Next Module >](../module03/concepts-read-replicas.md)
 
 # High availability concepts in Azure Database for PostgreSQL - Flexible Server
 
