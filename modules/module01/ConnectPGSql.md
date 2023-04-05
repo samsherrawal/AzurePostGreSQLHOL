@@ -1,13 +1,12 @@
 [< Previous Module](./ConnectPGUsingpsql.md) - **[Home](../../README.md)** - [Next Module >](../module02/how-to-migrate-using-dump-and-restore.md)
 
-
+# Module03 - Connecting to Azure Database for PostgreSQL with pgAdmin
 In this excercise, we will show how to connect to instances of Azure Database for PostgreSQL servers using the pgAdmin tool installed locally on a user’s workstation.
 
 # Introduction
 
 Every type of database has a set of data tools that helps management and operations on the database instances. The most popular management tool to operate on the Azure database for PostgreSQL is pgAdmin. Let’s go ahead and see how to connect to instances of Azure Database for PostgreSQL using the pgAdmin tool.
 
-# Connecting to Azure Database for PostgreSQL with pgAdmin
 
 We will connect to an instance of Azure Database for PostgreSQL using pgAdmin, so the first step of this exercise is installing pgAdmin on a local workstation. The latest version of this tool is pgAdmin 4. This tool can be freely downloaded on the local machine from [here](https://www.pgadmin.org/download/). As shown below, one can select the version of the tool based on the Operating System or platform on which the tool is expected to be installed. We would be using the version of the tool that will be installed on a Windows operating system.
 
@@ -60,8 +59,8 @@ By default, the database to which pgAdmin connects is the Postgres database. The
 ![pgadmin-connection-properties-pgadmin](./image/pgadmin-connection-properties-for-azure-database-f.png)
 
 ## Next steps
+[Continue >](../module02/how-to-migrate-using-dump-and-restore.md)
 
-[Migrate your PostgreSQL database](../module02/how-to-migrate-using-dump-and-restore.md)
 
 
 
