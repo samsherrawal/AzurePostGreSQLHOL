@@ -20,6 +20,7 @@ Download the PostgreSQL DVD Rental sample database from [here](../module02/dbdum
 
 First launch the psql tool.
 
+If you have already created the database in the previous module then you can ignore this step.
 Execute the following CREATE DATABASE statement to create a new database called dvdrental.
 
 CREATE DATABASE dvdrental;
@@ -50,6 +51,8 @@ pg_restore -v --no-owner --host=mydemoserver.postgres.database.azure.com --port=
 The step by step directions on how to use the pgAdmin tool to restore the sample database from the database file:
 
 First, launch the pgAdmin tool and connect to the PostgreSQL server.
+
+If you have already created the database in the previous module then you can ignore this step. 
 
 Second, right click the Databases and select the Create > Database… menu option:
 
@@ -94,7 +97,7 @@ One way to migrate your existing PostgreSQL database to Azure Database for Postg
 Take the backup with the `-Fc` switch, so that you can perform the restore in parallel to speed it up. For example:
 
 ```bash
-pg_dump -h my-source-server-name -U source-server-username -Fc -d source-databasename -f Z:\Data\Backups\dvdrental.dump
+pg_dump -h mydemoserver.postgres.database.azure.com -U myadmin -Fc -d dvdrental -f Z:\Data\Backups\dvdrental.dump
 ```
 
 ### For the restore
@@ -105,16 +108,11 @@ pg_dump -h my-source-server-name -U source-server-username -Fc -d source-databas
 
 - Restore with the `-j N` switch (where `N` represents the number) to parallelize the restore. The number you specify is the number of cores on the target server. You can also set to twice the number of cores of the target server to see the impact.
 
-    Here's an example for how to use this `pg_restore` for Single Server:
-
-    ```bash
-     pg_restore -h my-target-server.postgres.database.azure.com -U azure-postgres-username@my-target-server -j 4 -d my-target-databasename Z:\Data\Backups\dvdrental.dump
-    ```
-
+   
     Here's an example for how to use this `pg_restore` for Flexible Server:
 
     ```bash
-     pg_restore -h my-target-server.postgres.database.azure.com -U azure-postgres-username -j 4 -d my-target-databasename Z:\Data\Backups\dvdrental.dump
+     pg_restore -h mydemoserver.postgres.database.azure.com -U myadmin -j 4 -d dvdrental Z:\Data\Backups\dvdrental.dump
     ```
 
 - You can also edit the dump file by adding the command `set synchronous_commit = off;` at the beginning, and the command `set synchronous_commit = on;` at the end. Not turning it on at the end, before the apps change the data, might result in subsequent loss of data.
