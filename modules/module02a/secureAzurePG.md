@@ -96,7 +96,7 @@ There are also more specialist roles:
 
 # Create admin users in Azure Database for PostgreSQL
 
-* In Azure Data Studio (or your preferred client tool), connect to your Azure Database for PostgreSQL server with the admin sign-in credentials.
+* In pgAdmin (or your preferred client tool), connect to your Azure Database for PostgreSQL server with the admin sign-in credentials.
 * Edit the following SQL code by replacing the placeholders with your username and password:
 
 
@@ -109,7 +109,7 @@ To allow users access to databases hosted on your Azure Database for PostgreSQL 
 
 # Create database users in Azure Database for PostgreSQL
 
-* In Azure Data Studio (or your preferred client tool), connect to your Azure Database for PostgreSQL server with the admin sign-in credentials.
+* In pgAdmin (or your preferred client tool), connect to your Azure Database for PostgreSQL server with the admin sign-in credentials.
 
 * With the relevant database as the current database, use CREATE ROLE with the relevant options to create a new role (user).
 
@@ -220,7 +220,7 @@ Please Note When the user is created, make a note of the full User principal nam
 
 # GRANT access to Azure Database for PostgreSQL
 
-1. Open Azure Data Studio and connect to your Azure Database for PostgreSQL server.
+1. Open pgAdmin and connect to your Azure Database for PostgreSQL server.
 
 2. In the query pane, execute this code. Twelve user roles should be returned, including the demo role that you're using to connect:
 
@@ -238,7 +238,7 @@ GRANT CONNECT ON DATABASE mydb TO dbuser;
 GRANT SELECT, INSERT, UPDATE, DELETE ON customer TO dbuser;
 
 # Test the new role
-1. In Azure Data Studio, in the list of CONNECTIONS select the new connection button.
+1. In pgAdmin, in the list of CONNECTIONS select the new connection button.
 
 2. In the Connection type list, select PostgreSQL.
 
