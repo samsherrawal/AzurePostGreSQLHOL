@@ -1,7 +1,7 @@
 [< Previous Module](../module02/how-to-migrate-using-export-and-import.md) - **[Home](../../README.md)** - [Next Module >](../module03/concepts-backup-restore.md)
 
 
-# Module 04 - Describe Azure Database for PostgreSQL security
+# Module 04 - Describe Azure Database for PostgreSQL Security
 
 Azure Database for PostgreSQL uses multiple layers of security to protect data. In this module we will learn about the Azure Database for PostgreSQL security module, the built-in server roles, and how to grant permissions to database users. We will also learn about how encryption protects data at rest, and in transit.
 
