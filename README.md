@@ -32,7 +32,7 @@ As you’re considering cloud-hosted database offerings, important qualities to 
 
 * An [Azure account](https://azure.microsoft.com/free/) with an active subscription. Note: If you don't have access to an Azure subscription, you may be able to start with a [free account](https://www.azure.com/free).
 * You must have the necessary privileges within your Azure subscription to create resources, perform role assignments, register resource providers (if required), etc.
-* Download and Install PG Admin tool [ PG Admin](https://www.pgadmin.org/download/pgadmin-4-windows/)
+* Download and Install pgAdmin tool [pgAdmin](https://www.pgadmin.org/download/pgadmin-4-windows/)
 * Visual Studio Code installed
 
 ## :books: Preface
