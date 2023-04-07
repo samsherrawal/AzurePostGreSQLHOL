@@ -119,16 +119,20 @@ As an example, the following query:
 * Creates a new user with a strong password.
 * Grants connect privileges to the Mydb database.
 
-CREATE DATABASE Mydb;
-CREATE TABLE customer (
-    id integer NOT NULL,
-    person_id character varying(32) NOT NULL,
-    store_number integer NOT NULL,
-    territory_number integer NOT NULL,
-	account_numner character varying(32) NOT NULL,
-    description character varying(256) NOT NULL
-);
-CREATE ROLE <db_user> WITH LOGIN NOSUPERUSER INHERIT CREATEDB NOCREATEROLE NOREPLICATION PASSWORD '<StrongPassword!>';
+CREATE DATABASE Mydb;  
+
+CREATE TABLE public.customer (  
+
+    customer_id integer NOT NULL,
+    customer_name character varying(32) NOT NULL,
+    store_number integer NULL,
+    territory_number integer NULL,
+	account_number character varying(32) NULL,
+    description character varying(256) NULL
+);  
+
+CREATE ROLE <db_user> WITH LOGIN NOSUPERUSER INHERIT CREATEDB NOCREATEROLE NOREPLICATION PASSWORD '<StrongPassword!>';  
+
 GRANT CONNECT ON DATABASE Mydb TO <db_user>;
 
 To try the query, you can replace the placeholders with your user information.
@@ -236,7 +240,8 @@ SELECT rolame FROM pg_catalog.pg_role;
 
 3. To create a new role, execute this code
 
-CREATE ROLE dbuser WITH LOGIN NOSUPERUSER INHERIT CREATEDB NOCREATEROLE NOREPLICATION PASSWORD 'Welcome2023';
+CREATE ROLE dbuser WITH LOGIN NOSUPERUSER INHERIT CREATEDB NOCREATEROLE NOREPLICATION PASSWORD 'Welcome2023';  
+
 GRANT CONNECT ON DATABASE mydb TO dbuser;
 
 4. To list the new role, execute the above SELECT query again. You should see the dbuser role listed.
@@ -260,16 +265,23 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON customer TO dbuser;
 
 7. Select New query and then execute this code:
 
-SELECT * FROM customer;
+SELECT * FROM public.customer;
+
+INSERT INTO public.customer(  
+
+	customer_id, customer_name, store_number, territory_number, account_number, description)
+	VALUES (7, 'some one', 100, 10, 5555, 'this is test');
 
 8. To test whether you have the UPDATE privilege, execute this code:
 
-UPDATE customer SET name = 'Jane Doe' WHERE cust_id = 7;
- SELECT * FROM cusotmer;
+UPDATE public.customer SET customer_name = 'Jane Doe' WHERE customer_id = 7;  
+
+
+ SELECT * FROM public.cusotmer;
 
  9. To test whether you have the DROP privilege, execute this code. If there's an error, examine the error code:
 
- DROP TABLE cusotmer;
+ DROP TABLE public.cusotmer;
 
  10. To test whether you have the GRANT privilege, execute this code:
 
