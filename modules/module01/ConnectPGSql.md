@@ -38,7 +38,7 @@ Once we click on the Save button, pgAdmin 4 would immediately attempt to connect
 
 Change the format of the username as shown below. Sqladmin is the username in our case and the portion after “@” is the hostname, which can be easily found from the dashboard page of the database instance.
 
-![username-format-pgadmin](./image/username-format.png) 
+![username-format-pgadmin](./image/connection-properties.png) 
 
 
 After changing the database username format, click on the Save button, and that would re-initiate connection to the instance. The connection would again fail with an error, as shown below. The reason is that we have not configured the firewall settings of the Azure Database for the Postgres instance to allow incoming connections from the workstation on which pgAdmin 4 is installed.
