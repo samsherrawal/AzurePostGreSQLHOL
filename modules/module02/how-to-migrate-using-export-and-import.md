@@ -18,9 +18,9 @@ To export your existing PostgreSQL database on-premises or in a VM to a sql scri
 ```bash
 pg_dump --host=<host> --username=<name> --dbname=<database name> --file=<database>.sql
 ```
-For example, if you have a local server and a database called **testdb** in it:
+For example, if you have a local server and a database called **dvdrental** in it:
 ```bash
-pg_dump --host=localhost --username=masterlogin --dbname=testdb --file=testdb.sql
+pg_dump --host=localhost --username=masterlogin --dbname=dvdrental --file=dvdrental.sql
 ```
 
 ## Import the data on target Azure Database for PostgreSQL
@@ -29,16 +29,11 @@ You can use the psql command line and the --dbname parameter (-d) to import the 
 ```bash
 psql --file=<database>.sql --host=<server name> --port=5432 --username=<user> --dbname=<target database name>
 ```
-This example uses psql utility and a script file named **testdb.sql** from previous step to import data into the database **mypgsqldb** on the target server **mydemoserver.postgres.database.azure.com**.
-
-For **Single Server**, use this command 
-```bash
-psql --file=testdb.sql --host=mydemoserver.database.windows.net --port=5432 --username=mylogin@mydemoserver --dbname=mypgsqldb
-```
+This example uses psql utility and a script file named **testdb.sql** from previous step to import data into the database **dvdrental** on the target server **mydemoserver.postgres.database.azure.com**.
 
 For **Flexible Server**, use this command  
 ```bash
-psql --file=testdb.sql --host=mydemoserver.database.windows.net --port=5432 --username=mylogin --dbname=mypgsqldb
+psql --file=dvdrental.sql --host=mydemoserver.database.windows.net --port=5432 --username=myadmin --dbname=dvdrental
 ```
 
 
