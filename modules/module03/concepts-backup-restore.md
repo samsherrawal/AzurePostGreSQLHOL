@@ -1,7 +1,7 @@
 
 [< Previous Module](../module02a/secureAzurePG.md) - **[Home](../../README.md)** - [Next Module >](../module06/Ora2PG.md)
 
-# Module 05 - Backup and restore in Azure Database for PostgreSQL - Flexible Server
+# Module 05 - Backup and Restore in Azure Database for PostgreSQL 
 
 Backups form an essential part of any business continuity strategy. They help protect data from accidental corruption or deletion. 
 
