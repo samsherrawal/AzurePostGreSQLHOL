@@ -120,6 +120,14 @@ As an example, the following query:
 * Grants connect privileges to the Mydb database.
 
 CREATE DATABASE Mydb;
+CREATE TABLE customer (
+    id integer NOT NULL,
+    person_id character varying(32) NOT NULL,
+    store_number integer NOT NULL,
+    territory_number integer NOT NULL,
+	account_numner character varying(32) NOT NULL,
+    description character varying(256) NOT NULL
+);
 CREATE ROLE <db_user> WITH LOGIN NOSUPERUSER INHERIT CREATEDB NOCREATEROLE NOREPLICATION PASSWORD '<StrongPassword!>';
 GRANT CONNECT ON DATABASE Mydb TO <db_user>;
 
